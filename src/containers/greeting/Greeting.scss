@@ -19,6 +19,7 @@
 
 .subTitle {
   color: $subTitle !important;
+  white-space: pre-line;
 }
 
 .greeting-main {
@@ -119,6 +120,7 @@
     height: 256px;
   }
 }
+
 
 @media (max-width: 320px) {
   .main {

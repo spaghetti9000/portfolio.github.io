@@ -30,7 +30,7 @@ export default function Greeting() {
               <p
                 className={
                   isDark
-                    ? "dark-mode greeting-text-p"
+                    ? "dark-mode greeting-text-p subTitle"
                     : "greeting-text-p subTitle"
                 }
               >

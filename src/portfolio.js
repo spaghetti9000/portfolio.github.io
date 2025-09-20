@@ -20,36 +20,42 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Marcelo Ribero Cerro",
+  title: "Hey there, I'm Marcelo",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "I consider myself determined, creative and versatile. Always trying to achieve my goals. \n\n" + 
+    "I believe in consistency, hard-work and teamwork. I am experienced in international environments and take pride on what I do.\n\n" + 
+    "Currently following a Cyber-security Master in Radboud University. Deeply interested in cyber-security and systems architecture design.\n\n" + 
+    "I am passionate about sports, enjoy growing plants and playing CTFs.\n"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/spaghetti9000",
+  linkedin: "www.linkedin.com/in/marcelo-ribero-cerro-7b56ba323",
+  
+  // gmail: "saadpasta70@gmail.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
+  
   display: true // Set true to display this section, defaults to false
 };
 
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "My skills",
+  subTitle: "Everything I have learned and consider myself familiar with",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -126,23 +132,34 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "Radboud University",
+      logo: require("./assets/images/radboud-logo.png"),
+      subHeader: "Master's Degree in Cybersecurity",
+      duration: "September 2025 - Present (Expected end date July 2027)",
+      desc: "",
+      descBullets: [""]
+    },
+  
+    {
+      schoolName: "Kansai Gaidai University",
+      logo: require("./assets/images/kansai-gaidai-logo.png"),
+      subHeader: "Exchange Semester, Minor on Japanese Language",
+      duration: "August 2024 - December 2024",
+      desc: "Studied the japanese language and culture",
+      descBullets: [""]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Radboud University",
+      logo: require("./assets/images/radboud-logo.png"),
+      subHeader: "Bachelor's Degree in Computing Science",
+      duration: "September 2022 - July 2025",
+      desc: [
+        "Specialized in cybersecurity and software.",
+      ],
+      descBullets: [
+        "In my thesis I explored how Large Language Models can be leverage for mass spearphishing attacks.",
+        "Part of the 28% that completes the bachelor within 4 years"
+      ]
     }
   ]
 };
@@ -174,30 +191,31 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Student assistant",
+      company: "Radboud University",
+      companylogo: require("./assets/images/radboud-logo.png"),
+      date: "September 2024 – Present",
+      desc: "Tasked with helping students through different university courses",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "New Devices Lab: Introduces students to the engineering process of embedded systems",
+        "Hacking in C: Core concepts of C language and explore possible exploitations through code vulnerabilities.",
+        "Operating Systems Concepts:  Explores core OS topics such as process scheduling, memory management,and concurrency. ",
+        "Object Oriented Programming: Teaches foundational programming concepts in Java, " +
+        "including class design, inheritance, and exception handling."
       ]
     },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        {
+      role: "Consultant",
+      company: "HAN University of Applied Sciences",
+      companylogo: require("./assets/images/han-logo.jpeg"),
+      date: "September 2024 – Present",
+      desc: "Developed software solutions for sustainability-related challenges and conducted applied research.",
+      descBullets: [
+        "Worked with technologies such as Python, Google Scholar, Microsoft Excel."
+      ]
     },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
+    
+
   ]
 };
 
@@ -369,21 +387,20 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "You can get in touch with me through email",
+  email_address: "marcelo.riberocerro@protonmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
