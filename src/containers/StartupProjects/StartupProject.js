@@ -43,6 +43,8 @@ export default function StartupProject() {
                       : "project-card project-card-light"
                   }
                 >
+                  <div className="project-content">
+
                   {project.image ? (
                     <div className="project-image">
                       <img
@@ -65,7 +67,8 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
-                    {project.footerLink ? (
+
+{project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
                           return (
@@ -83,6 +86,16 @@ export default function StartupProject() {
                       </div>
                     ) : null}
                   </div>
+                  </div>
+                    {project.video ? (
+                      <div className="project-video">
+                        <video controls autoPlay muted loop title={project.name}>
+                          <source 
+                            src={project.video} > 
+                          </source>
+                        </video>
+                      </div>
+                    ) : null}
                 </div>
               );
             })}

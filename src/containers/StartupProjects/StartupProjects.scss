@@ -19,12 +19,13 @@
 }
 .project-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-start;
   background-color: $lightBackground2;
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
-  justify-content: center;
+  width: max-content;
 }
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
@@ -41,7 +42,10 @@
 }
 
 .project-detail {
-  text-align: center;
+  text-align: justify;
+  width: 20vw ;
+  white-space: pre-line;
+
 }
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
@@ -49,6 +53,13 @@
 .project-card-dark:hover {
   box-shadow: 0px 20px 30px -10px $darkBoxShadow;
 }
+
+.project-content{
+  flex:1;
+  border-radius: 10px;
+  padding: 3rem;
+}
+
 .project-image {
   position: relative;
   height: 250px;
@@ -57,6 +68,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.project-video{
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
 
 .projects-container {
   display: grid;

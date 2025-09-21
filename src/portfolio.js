@@ -234,26 +234,20 @@ const bigProjects = {
   subtitle: "Software products in which I have taken part in:",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: null,
       projectName: "Box Packing Optimization",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "As part of my bachelor's degree, I collaborated with seven other developers to create a web-based application for warehouse " + 
+                   "object optimization. \n\n Given a specific number of boxes, the program calculates and displays the most efficient solution." +
+                   "Key features include file import/export, box locking, and step-by-step reconstruction of the solution. \n\n" + 
+                   " The application was developed using Spring Boot (Java) and React"+
+                   " ",      
+      video: require("./assets/videos/box-packing-demo.mp4"), 
       footerLink: [
         {
           name: "Visit Website",
           url: "http://saayahealth.com/"
         }
         //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
       ]
     }
   ],
