@@ -43,7 +43,7 @@
 
 .project-detail {
 	text-align: justify;
-	width: 20vw;
+	width: 30vw;
 	white-space: pre-line;
 }
 .project-card-light:hover {
@@ -61,10 +61,11 @@
 
 .project-image {
 	position: relative;
-	height: 250px;
+	height: 150px;
+	width: auto;
 	overflow: hidden;
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
 }
 

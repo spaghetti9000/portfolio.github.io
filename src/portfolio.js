@@ -70,56 +70,64 @@ https://fontawesome.com/icons?d=gallery */
 
 	softwareSkills: [
 		{
-			skillName: "html-5",
-			fontAwesomeClassname: "fab fa-html5",
+			skillName: "Java",
+			fontAwesomeClassname: "fab fa-java",
 		},
 		{
-			skillName: "css3",
-			fontAwesomeClassname: "fab fa-css3-alt",
-		},
-		{
-			skillName: "sass",
-			fontAwesomeClassname: "fab fa-sass",
-		},
-		{
-			skillName: "JavaScript",
-			fontAwesomeClassname: "fab fa-js",
-		},
-		{
-			skillName: "reactjs",
-			fontAwesomeClassname: "fab fa-react",
-		},
-		{
-			skillName: "nodejs",
-			fontAwesomeClassname: "fab fa-node",
-		},
-		{
-			skillName: "swift",
-			fontAwesomeClassname: "fab fa-swift",
-		},
-		{
-			skillName: "npm",
-			fontAwesomeClassname: "fab fa-npm",
-		},
-		{
-			skillName: "sql-database",
-			fontAwesomeClassname: "fas fa-database",
-		},
-		{
-			skillName: "aws",
-			fontAwesomeClassname: "fab fa-aws",
-		},
-		{
-			skillName: "firebase",
-			fontAwesomeClassname: "fas fa-fire",
-		},
-		{
-			skillName: "python",
+			skillName: "Python",
 			fontAwesomeClassname: "fab fa-python",
 		},
 		{
-			skillName: "docker",
+			skillName: "C",
+			fontAwesomeClassname: "fas fa-code",
+		},
+		{
+			skillName: "Haskell",
+			fontAwesomeClassname: "fas fa-code",
+		},
+		{
+			skillName: "Assembly",
+			fontAwesomeClassname: "fas fa-microchip",
+		},
+		{
+			skillName: "Javascript",
+			fontAwesomeClassname: "fab fa-js",
+		},
+		{
+			skillName: "SQL",
+			fontAwesomeClassname: "fas fa-database",
+		},
+		{
+			skillName: "Git",
+			fontAwesomeClassname: "fab fa-git-alt",
+		},
+		{
+			skillName: "Docker",
 			fontAwesomeClassname: "fab fa-docker",
+		},
+		{
+			skillName: "Latex",
+			fontAwesomeClassname: "fas fa-file-alt",
+		},
+		{
+			skillName: "SCRUM",
+			fontAwesomeClassname: "fas fa-project-diagram",
+		},
+		{
+			skillName: "CI/CD",
+			fontAwesomeClassname: "fas fa-sync-alt",
+		},
+		{
+			skillName: "Spring Boot",
+			fontAwesomeClassname: "fas fa-leaf", // generic placeholder
+		},
+		{
+			skillName: "React",
+			fontAwesomeClassname: "fab fa-react",
+		},
+		{
+			skillName: "Kali Linux Toolkit",
+			fontAwesomeClassname: "fas fa-terminal",
 		},
 	],
 	display: true, // Set false to hide this section, defaults to true
@@ -229,13 +237,13 @@ const bigProjects = {
 	subtitle: "Software products in which I have taken part in:",
 	projects: [
 		{
-			image: null,
+			image: require("./assets/images/boxes.png"),
 			projectName: "Box Packing Optimization",
 			projectDesc:
 				"As part of my bachelor's degree, I collaborated with seven other developers to create a web-based application for warehouse " +
 				"object optimization. \n\n Given a specific number of boxes, the program calculates and displays the most efficient solution." +
 				"Key features include file import/export, box locking, and step-by-step reconstruction of the solution. \n\n" +
-				" The application was developed using Spring Boot (Java) and React" +
+				" The application was developed using Spring Boot (Java) and React." +
 				" ",
 			video: require("./assets/videos/box-packing-demo.mp4"),
 			footerLink: [
@@ -247,10 +255,13 @@ const bigProjects = {
 			],
 		},
 		{
-			image: null,
+			image: require("./assets/images/spear.png"),
 			projectName: "Bachelor's Thesis: PhishGPT",
 			projectDesc:
-				'In my thesis, "PhishGPT: Automating HTML Phishing Emails Using ChatGPT," I investigated the potential of Large Language Models (LLMs), particularly ChatGPT, to automate the creation of high-quality phishing emails. The findings show that LLM-generated emails are as good as. This research highlights the feasibility of mass spear-phishing campaigns and underscores the need for more advanced defensive measurements.',
+				'In my thesis, "PhishGPT: Automating HTML Phishing Emails Using ChatGPT" I investigated the potential of Large Language Models (LLMs)' +
+				", particularly ChatGPT, to automate the creation of high-quality phishing emails. \n\n" +
+				"The findings show that LLM-generated emails are as good as. This research highlights the feasibility of mass spear-phishing" +
+				" campaigns and underscores the need for more advanced defensive measurements.",
 			video: null,
 			footerLink: [
 				{
@@ -311,7 +322,7 @@ const achievementSection = {
 		{
 			title: "PWA Web App Developer",
 			subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-			image: require("./assets/images/pwaLogo.webp"),
+			image: null,
 			imageAlt: "PWA Logo",
 			footerLink: [
 				{
