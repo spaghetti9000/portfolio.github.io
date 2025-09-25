@@ -9,10 +9,14 @@
   text-align: center;
 }
 
-.software-skill-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+.software-skill-inline{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 60px;
+  height: auto;
+
 }
 
 .software-skill-inline > i {
@@ -28,4 +32,11 @@
 }
 .software-skill-inline > i:hover ~ p {
   color: $skillsColor;
+}
+.software-skills-list{
+  display: grid;
+  gap: 20px; /* spacing between items */
+  grid-template-columns: repeat(auto-fill, minmax(120px, max-content));
+  justify-content:center;
+  place-items:center;
 }

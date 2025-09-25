@@ -30,23 +30,25 @@
 
 .skills-container {
   display:flex;
+  flex-wrap: wrap;
 }
 .skills-category-title{
   font-size: 20px;
 }
 .skills-category-container{
   width: 50%;
-  height: auto; 
+  height: auto;
   border: 1px solid rgba(211,211,211,0.397);
   border-radius: 10px;
   padding: 3rem;
+
+
 }
 .software-skills-main-div{
   display: flex;
   gap:16px;
   
 }
-
 /* Media Query */
 @media (max-width: 1380px) {
 	.skills-heading {

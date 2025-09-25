@@ -29,9 +29,10 @@ export default function SoftwareSkill() {
             {skillsSection.softwareSkills
               .filter((s) => s.category === cat)
               .map((skill, i) => (
-                <p key={i} className="software-skill-inline">
-                  <i className={skill.fontAwesomeClassname}></i> {skill.skillName}
-                </p>
+                <div className="software-skill-inline">
+                  <i className={skill.fontAwesomeClassname + " fa-4x"}></i> 
+                  <span className="skill-name">{skill.skillName}</span>
+                </div>
               ))}
           </div>
         </div>
