@@ -72,62 +72,77 @@ https://fontawesome.com/icons?d=gallery */
 		{
 			skillName: "Java",
 			fontAwesomeClassname: "fab fa-java",
+      category: "programming language",
 		},
 		{
 			skillName: "Python",
 			fontAwesomeClassname: "fab fa-python",
+      category: "programming language",
 		},
 		{
 			skillName: "C",
 			fontAwesomeClassname: "fas fa-code",
+      category: "programming language",
 		},
 		{
 			skillName: "Haskell",
 			fontAwesomeClassname: "fas fa-code",
+      category: "programming language",
 		},
 		{
 			skillName: "Assembly",
 			fontAwesomeClassname: "fas fa-microchip",
+      category: "programming language",
 		},
 		{
 			skillName: "Javascript",
 			fontAwesomeClassname: "fab fa-js",
+      category: "programming language",
 		},
 		{
 			skillName: "SQL",
 			fontAwesomeClassname: "fas fa-database",
+      category: "programming language",
 		},
 		{
 			skillName: "Git",
 			fontAwesomeClassname: "fab fa-git-alt",
+      category: "programming language",
 		},
 		{
 			skillName: "Docker",
 			fontAwesomeClassname: "fab fa-docker",
+      category: "programming language",
 		},
 		{
 			skillName: "Latex",
 			fontAwesomeClassname: "fas fa-file-alt",
+      category: "programming language",
 		},
 		{
 			skillName: "SCRUM",
 			fontAwesomeClassname: "fas fa-project-diagram",
+      category: "programming language",
 		},
 		{
 			skillName: "CI/CD",
 			fontAwesomeClassname: "fas fa-sync-alt",
+      category: "programming language",
 		},
 		{
 			skillName: "Spring Boot",
-			fontAwesomeClassname: "fas fa-leaf", // generic placeholder
+			fontAwesomeClassname: "fas fa-leaf",
+      category: "programming language", // generic placeholder
 		},
 		{
 			skillName: "React",
 			fontAwesomeClassname: "fab fa-react",
+      category: "programming language",
 		},
 		{
 			skillName: "Kali Linux Toolkit",
 			fontAwesomeClassname: "fas fa-terminal",
+      category: "tools",
 		},
 	],
 	display: true, // Set false to hide this section, defaults to true

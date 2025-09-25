@@ -12,7 +12,18 @@ export default function Skills() {
   if (!skillsSection.display) {
     return null;
   }
+
+const categories = Array.from(
+  new Set(skillsSection.skills.map(s => s.category).filter(Boolean))
+);
+
+const capitalizeWords = (str) =>
+  str
+    .split(" ")
+    .map((word) => word[0].toUpperCase() + word.slice(1))
+    .join(" ");
   return (
+
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skills-main-div">
         <Fade left duration={1000}>
@@ -32,7 +43,7 @@ export default function Skills() {
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >
-              {skillsSection.title}{" "}
+              {skillsSection.title}{""}
             </h1>
             <p
               className={
@@ -41,25 +52,10 @@ export default function Skills() {
                   : "subTitle skills-text-subtitle"
               }
             >
-              {skillsSection.subTitle}
+              {skillsSection.subTitle} 
             </p>
             <SoftwareSkill />
-            <div>
-              {skillsSection.skills.map((skills, i) => {
-                return (
-                  <p
-                    key={i}
-                    className={
-                      isDark
-                        ? "dark-mode subTitle skills-text"
-                        : "subTitle skills-text"
-                    }
-                  >
-                    {skills}
-                  </p>
-                );
-              })}
-            </div>
+
           </div>
         </Fade>
       </div>
