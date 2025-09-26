@@ -72,77 +72,77 @@ https://fontawesome.com/icons?d=gallery */
 		{
 			skillName: "Java",
 			fontAwesomeClassname: "fab fa-java",
-      category: "programming language",
+      category: "Programming Language",
 		},
 		{
 			skillName: "Python",
 			fontAwesomeClassname: "fab fa-python",
-      category: "programming language",
+      category: "Programming Language",
 		},
 		{
 			skillName: "C",
 			fontAwesomeClassname: "fas fa-code",
-      category: "programming language",
+      category: "Programming Language",
 		},
 		{
 			skillName: "Haskell",
 			fontAwesomeClassname: "fas fa-code",
-      category: "programming language",
+      category: "Programming Language",
 		},
 		{
 			skillName: "Assembly",
 			fontAwesomeClassname: "fas fa-microchip",
-      category: "programming language",
+      category: "Programming Language",
 		},
 		{
 			skillName: "Javascript",
 			fontAwesomeClassname: "fab fa-js",
-      category: "programming language",
+      category: "Programming Language",
 		},
 		{
 			skillName: "SQL",
 			fontAwesomeClassname: "fas fa-database",
-      category: "programming language",
+      category: "Programming Language",
 		},
 		{
 			skillName: "Git",
 			fontAwesomeClassname: "fab fa-git-alt",
-      category: "programming language",
+      category: "Tools",
 		},
 		{
 			skillName: "Docker",
 			fontAwesomeClassname: "fab fa-docker",
-      category: "programming language",
+      category: "Tools",
 		},
 		{
 			skillName: "Latex",
 			fontAwesomeClassname: "fas fa-file-alt",
-      category: "programming language",
+      category: "Tools",
 		},
 		{
 			skillName: "SCRUM",
 			fontAwesomeClassname: "fas fa-project-diagram",
-      category: "programming language",
+      category: "Frameworks & Libraries",
 		},
 		{
 			skillName: "CI/CD",
 			fontAwesomeClassname: "fas fa-sync-alt",
-      category: "programming language",
+      category: "Frameworks & Libraries",
 		},
 		{
 			skillName: "Spring Boot",
 			fontAwesomeClassname: "fas fa-leaf",
-      category: "programming language", // generic placeholder
+      category: "Frameworks & Libraries", // generic placeholder
 		},
 		{
 			skillName: "React",
 			fontAwesomeClassname: "fab fa-react",
-      category: "programming language",
+      category: "Frameworks & Libraries",
 		},
 		{
 			skillName: "Kali Linux Toolkit",
 			fontAwesomeClassname: "fas fa-terminal",
-      category: "tools",
+      category: "Tools",
 		},
 	],
 	display: true, // Set false to hide this section, defaults to true

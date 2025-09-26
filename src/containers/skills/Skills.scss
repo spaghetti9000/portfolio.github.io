@@ -15,11 +15,6 @@
 	margin-bottom: 10px;
 }
 
-.skills-image-div > img {
-	max-width: 50%; 
-  height: auto;
-}
-
 .skills-heading {
 	font-size: 56px;
 	font-weight: 400;
@@ -34,6 +29,8 @@
 }
 .skills-category-title{
   font-size: 20px;
+  text-align: center; 
+  margin-bottom: 20px;
 }
 .skills-category-container{
   width: 50%;
@@ -44,11 +41,7 @@
 
 
 }
-.software-skills-main-div{
-  display: flex;
-  gap:16px;
-  
-}
+
 /* Media Query */
 @media (max-width: 1380px) {
 	.skills-heading {
@@ -78,8 +71,8 @@
 		font-size: 16px;
 		text-align: center;
 	}
-	.skills-image-div {
-	 width: 30%; 	
-   order: 2;
+	.skills-image-div  {
+	 max-width:10px ; 	
+   order: 1;
 	}
 }

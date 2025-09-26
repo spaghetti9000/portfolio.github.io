@@ -23,6 +23,11 @@
   color: $subTitle;
 }
 
+.software-skills-main-div{
+  display: flex;
+  gap:16px;
+  
+}
 .software-skill-inline > i:hover {
   color: $skillsColor;
 }
