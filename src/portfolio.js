@@ -67,7 +67,6 @@ const skillsSection = {
 
 	/* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
-// TODO: Add more skills 
 	softwareSkills: [
 		{
 			skillName: "Java",
