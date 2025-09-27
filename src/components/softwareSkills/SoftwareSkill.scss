@@ -36,6 +36,7 @@
   z-index: 10;
   pointer-events: none; /* optional: makes tooltip ignore mouse */
   padding: 2rem;
+
   width: clamp(200%,420%,500%);
   text-align: justify;
   word-spacing: 0.05em;
@@ -54,6 +55,9 @@
 .software-skills-main-div{
   display: flex;
   gap:16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-x:hidden;
   
 }
 .software-skill-inline > i:hover {

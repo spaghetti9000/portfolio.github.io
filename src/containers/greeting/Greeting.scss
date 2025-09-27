@@ -10,7 +10,7 @@
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: -2rem;
 }
 
 .greeting-main {
@@ -38,6 +38,10 @@
 .button-greeting-div {
   display: flex;
   margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
+  gap:clamp(10px,15px,20px)
 }
 .download-link-button {
   text-decoration: none;
@@ -52,7 +56,9 @@
 .greeting-text-p {
   font-size: 30px;
   line-height: 40px;
+  text-align: justify;
 }
+
 .greeting-image-div{
   display: flex;
   justify-content: center ;
@@ -61,8 +67,8 @@
 }
 
 .greeting-image-div > img {
-  width: 500px;
-  height:500px;
+  aspect-ratio:1/1;
+  height: clamp(200px,30vw,500px); 
   border-radius: 50%;
   object-fit:cover;
   object-position: center 20%;
