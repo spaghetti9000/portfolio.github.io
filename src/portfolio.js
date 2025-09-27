@@ -72,66 +72,80 @@ https://fontawesome.com/icons?d=gallery */
 			skillName: "Java",
 			fontAwesomeClassname: "fab fa-java",
       category: "Programming Language",
+      description: "I first learned Java on university and after that I have used it multiple projects during my career.\n\n One example is the Box-Packing Optimization project"
 		},
 		{
 			skillName: "Python",
 			fontAwesomeClassname: "fab fa-python",
       category: "Programming Language",
+      description: "I have used python for over three years now. It is my go-to language for data analytics and small-medium projects. I used it for my bachelor's thesis"
 		},
 		{
 			skillName: "C",
 			fontAwesomeClassname: "fas fa-code",
       category: "Programming Language",
+      description: "Learned both C++ and C in university both for programming and for program exploittaions. Currently, I use my knowledge very often in binary explotation CTFs"
 		},
 		{
 			skillName: "Haskell",
 			fontAwesomeClassname: "fas fa-code",
-      category: "Programming Language",
+      description: "Learned it as port of my functional programming course in university. While I haven't used it since, the functional programming principles have stayed with me",
+      category: "Programming Language"
 		},
 		{
 			skillName: "Assembly",
 			fontAwesomeClassname: "fas fa-microchip",
-      category: "Programming Language",
+      description: "Experimented with Assembly as part of a Processors course at unviersity. My current knowledge is thanks to binary explotation",
+      category: "Programming Language"
 		},
 		{
 			skillName: "Javascript",
 			fontAwesomeClassname: "fab fa-js",
-      category: "Programming Language",
+      description: "My only notatable experience is with creating this website :)",
+      category: "Programming Language"
 		},
 		{
 			skillName: "SQL",
 			fontAwesomeClassname: "fas fa-database",
-      category: "Programming Language",
+      description: "I do not ocnsider myself a wizard of SQL but I do have enough knowledge for database browsing and SQL injection attacks",
+      category: "Programming Language"
 		},
 		{
 			skillName: "Git",
 			fontAwesomeClassname: "fab fa-git-alt",
       category: "Tools",
+      description: "Ever since I discovered it in university, I have not stopped using it for all my projects. I am coonsider myselft profficient with ti."
+
 		},
 		{
 			skillName: "Docker",
 			fontAwesomeClassname: "fab fa-docker",
       category: "Tools",
+      description: "Used it for a few projects, I do not have much expertise but I can mke it work"
 		},
 		{
 			skillName: "Latex",
 			fontAwesomeClassname: "fas fa-file-alt",
       category: "Tools",
+      description: "Use it for everyday document cretion"
 		},
 		{
 			skillName: "SCRUM",
 			fontAwesomeClassname: "fas fa-project-diagram",
       category: "Frameworks & Libraries",
+      description:"My only experience with SCRUM was on the project Box-Packign Optimization, i was the SCRUM master. Although I consider myself very familiar with it."
 		},
 		{
 			skillName: "CI/CD",
 			fontAwesomeClassname: "fas fa-sync-alt",
       category: "Frameworks & Libraries",
+      description: "I implemented a CI/CD pipeline from scracth with github actions. I am familiar with the process"
 		},
 		{
 			skillName: "Spring Boot",
 			fontAwesomeClassname: "fas fa-leaf",
       category: "Frameworks & Libraries", // generic placeholder
+      description: "fsdf"
 		},
 		{
 			skillName: "React",

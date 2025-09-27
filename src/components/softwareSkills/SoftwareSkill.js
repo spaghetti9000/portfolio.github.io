@@ -26,16 +26,26 @@ export default function SoftwareSkill() {
 
           {/* Skills in this category */}
           <div className="software-skills-list">
-            {skillsSection.softwareSkills
-              .filter((s) => s.category === cat)
-              .map((skill, i) => (
-                <div className="software-skill-inline">
-                  <i className={skill.fontAwesomeClassname + " fa-4x"}></i> 
-                  <span className="skill-name">{skill.skillName}</span>
+                  {skillsSection.softwareSkills
+                    .filter((s) => s.category === cat)
+                    .map((skill, i) => (
+                      <div key={i}>
+                        <div className="software-skill-inline">
+                          <i className={skill.fontAwesomeClassname + " fa-4x"}></i> 
+                          <span className="skill-name">{skill.skillName}</span>
+
+                        {skill.description && (
+                          <div className="software-skill-description on-hover">
+                            {skill.description}
+                          </div>
+                        )}
+                        </div>
+                
+
+                      </div>
+                    ))}
                 </div>
-              ))}
           </div>
-        </div>
       ))}
     </div>
   );

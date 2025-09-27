@@ -16,11 +16,38 @@
   text-align: center;
   width: 60px;
   height: auto;
+  position:relative;
+  cursor: pointer;
 
 }
 
 .software-skill-inline > i {
   color: $subTitle;
+}
+.on-hover {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 120%; /* move it to the right of the icon */
+  transform: translateY(-50%);
+  background-color: rgba(67, 69, 87, 0.95);
+  color: white;
+  padding: 6px 10px;
+  white-space:pre-wrap;
+  z-index: 10;
+  pointer-events: none; /* optional: makes tooltip ignore mouse */
+  padding: 2rem;
+  width: clamp(200%,420%,500%);
+  text-align: justify;
+  word-spacing: 0.05em;
+  border-radius: 20px;
+  border: 1px solid rgba(211,211,211,0.5)
+
+}
+
+  
+.software-skill-inline:hover  .on-hover{
+  display:block;
 }
 
 .software-skills-main-div{
