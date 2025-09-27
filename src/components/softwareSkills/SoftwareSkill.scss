@@ -25,7 +25,6 @@
   color: $subTitle;
 }
 .on-hover {
-  display: none;
   position: absolute;
   top: 50%;
   left: 120%; /* move it to the right of the icon */
@@ -41,13 +40,15 @@
   text-align: justify;
   word-spacing: 0.05em;
   border-radius: 20px;
-  border: 1px solid rgba(211,211,211,0.5)
-
+  border: 1px solid rgba(211,211,211,0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
   
 .software-skill-inline:hover  .on-hover{
-  display:block;
+  opacity: 1;
+  transform: translateY(-50%),translateX(10px);
 }
 
 .software-skills-main-div{

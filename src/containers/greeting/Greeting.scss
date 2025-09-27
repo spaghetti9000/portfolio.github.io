@@ -53,12 +53,20 @@
   font-size: 30px;
   line-height: 40px;
 }
-
-.greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
+.greeting-image-div{
+  display: flex;
+  justify-content: center ;
+  align-items: center  ;
+  transform: translateY(-10%);
 }
 
+.greeting-image-div > img {
+  width: 500px;
+  height:500px;
+  border-radius: 50%;
+  object-fit:cover;
+  object-position: center 20%;
+}
 .wave-emoji {
   animation-duration: 1.8s;
   animation-iteration-count: infinite;

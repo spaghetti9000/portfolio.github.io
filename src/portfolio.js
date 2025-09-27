@@ -28,7 +28,7 @@ const greeting = {
 			"Currently following a Cyber-security Master in Radboud University. Deeply interested in cyber-security and systems architecture design.\n\n" +
 			"I am passionate about sports, enjoy growing plants and playing CTFs.\n"
 	),
-	resumeLink: "", // Set to empty to hide the button
+	resumeLink: "https://www.cs.ru.nl/bachelors-theses/2025/Marcelo_Ribero_Cerro___1100744___PhishGPT_-_Automating_HTML_Phishing_Emails_Using_ChatGPT.pdf", // Set to empty to hide the button
 	displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
