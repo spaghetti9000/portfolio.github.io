@@ -53,7 +53,7 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "My skills",
+  title: "Hard skills",
   subTitle: "Everything I have learned and consider myself familiar with",
   skills: [
   ],
@@ -306,17 +306,36 @@ const bigProjects = {
 
 
 // Softskills Section
-
 const softSkills = {
-
+  title: "Soft skills",
+  subtitle: "My strongest and most valuable soft skills",
+  languageTitle: "Languages",
+  languageSubtitle: "",
   display: true,
-
-  softSkills: [
-    { skill: "Communicator" },
-    { skill: "Leader" }
+  softSkills: [   // <-- use colon, not equal sign
+    {
+      title: "Leadership",
+      description: "Led a team of 5 in a university project, coordinating tasks and deadlines."
+    },
+    {
+      title: "Resilience",
+      description: "Overcame challenges during tight deadlines while maintaining quality work."
+    },
+    {
+      title: "Positivity",
+      description: "Consistently encouraged team members and maintained morale under pressure."
+    },
+    {
+      title: "Willingness to Learn",
+      description: "Took initiative to learn new tools and technologies to improve project outcomes."
+    }
   ],
   languages: [
-    { language: "English", level: "Proficient" }
+    { language: "Spanish", level: "Native" },
+    { language: "English", level: "Full Professional Proficiency", certificate: "C1 Cambridge" },
+    { language: "Italian", level: "Limited Professional Proficiency" },
+    { language: "Japanese", level: "Elementary Proficiency" },
+    { language: "Dutch", level: "Elementary Proficiency" }
   ]
 };
 // Achievement Section

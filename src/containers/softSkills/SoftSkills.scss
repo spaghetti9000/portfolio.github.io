@@ -1,0 +1,80 @@
+
+@import "../../_globalColor";
+
+.soft-skills-main-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.soft-skills{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.soft-skills-list{
+  display:grid;
+  flex-direction: column;
+  width: 65%;
+  gap: 1rem;
+
+}
+.language-card{
+  display: grid;
+  float: right;
+  text-align:right; 
+  color: inherit;
+  gap: 2rem;
+  // align-self: flex-start; // Makes right column strecht along side left column
+}
+
+.language{
+}
+
+.certificate{
+  font-size:0.8rem;
+  color: #e6e6ff;
+}
+.level{
+  font-size:0.9rem;
+}
+.soft-skill-item{
+  list-style: none;
+  border:1px solid rgba(211,211,211,0.397);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.soft-skill-language-item {
+  height: max-content;
+  list-style: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.soft-skills-title{
+  font-size: 56px;
+  font-weight: 400;
+  text-align: left; 
+  margin-bottom: 20px;
+  margin-top: -15px;
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.soft-skill-subtitle{
+  font-size: 20px;
+  text-align: left; 
+  margin-top: -15px;
+  width: max-content;
+}
+.soft-skill-item:hover,
+.soft-skill-language-item:hover, 
+.soft-skill-language-item:hover *{
+  background-color: #4a4a4a;
+}
+
+
