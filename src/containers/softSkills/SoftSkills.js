@@ -10,26 +10,44 @@ export default function SoftSkills() {
   if (!softSkills.display) {
     return null;
   }
-
   return (
     <div className={isDark ? "dark-mode soft-skills-main-div main" : "soft-skills main"} id="softskills">
       <Fade left duration={1000}>
-        <div className={isDark ? "dark-mode soft-skills-title" : "soft-skills-title"}>
-          <span>{softSkills.title}</span><span>{softSkills.languageTitle}</span>
+
+        <div className={isDark ? "dark-mode soft-skills-wrapper" : "soft-skills-wrapper"}>
+          {/* Main section title */}
+          <div className={isDark ? "dark-mode soft-skills-title" : "soft-skills-title"}>
+            <span>{softSkills.title}</span>
+          </div>
+
+          {/* Subtitle */}
+          <div className={isDark ? "dark-mode soft-skill-subtitle" : "soft-skill-subtitle"}>
+            {softSkills.subtitle}
+          </div>
+
+          {/* Soft skills and languages container */}
+          <div className={isDark ? "dark-mode soft-skills" : "soft-skills"}>
+            {/* Soft skills list */}
+            <div className={isDark ? "dark-mode soft-skills-list" : "soft-skills-list"}>
+              {softSkills.softSkills.map((skill, i) => (
+                <div key={i} className="soft-skill-item">
+                  <li>
+                    <strong>{skill.title}</strong>
+                    <p>{skill.description}</p>
+                  </li>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-        <div className={isDark ? "dark-mode soft-skill-subtitle" : "soft-skill-subtitle"}>
-          {softSkills.subtitle}
-        </div>
-        <div className={isDark ? "dark-mode soft-skills" : "soft-skills"}>
-          <div className={isDark ? "dark-mode soft-skills-list" : "soft-skills-list"}>
-            {softSkills.softSkills.map((skill, i) => (
-              <div key={i} className="soft-skill-item">
-                <li>
-                  <strong>{skill.title}</strong> {/* Title of the soft skill */}
-                  <p>{skill.description}</p>     {/* Description of how you got it */}
-                </li>
-              </div>
-            ))}
+        {/* Languages wrapper with title above list */}
+        <div className={isDark ? "dark-mode language-card-wrapper" : "language-card-wrapper"}>
+          <span className={isDark ? "dark-mode soft-skills-title" : "soft-skills-title"}>
+            {softSkills.languageTitle}
+          </span>
+
+          <div className={isDark ? "dark-mode soft-skill-subtitle" : "soft-skill-subtitle"}>
+            {softSkills.languageSubtitle}
           </div>
           <div className={isDark ? "dark-mode language-card" : "language-card"}>
             {softSkills.languages.map((lang, i) => (
@@ -47,7 +65,7 @@ export default function SoftSkills() {
             ))}
           </div>
         </div>
-      </Fade>
-    </div>
+      </Fade >
+    </div >
   );
 }

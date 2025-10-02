@@ -38,6 +38,17 @@ export default function Greeting() {
               </p>
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
+            </div>
+          </div>
+          <div className="greeting-image-div ">
+              <img
+                alt="Profile picture"
+                src={require("../../assets/images/profile-pic.jpg")}
+              ></img>
+          </div>
+
+        </div>
+
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
@@ -50,17 +61,6 @@ export default function Greeting() {
                   </a>
                 )}
               </div>
-            </div>
-          </div>
-          <div className="greeting-image-div ">
-            <Fade bottom duration={1000} distance="40px" appear delay={500}>
-              <img
-                alt="Profile picture"
-                src={require("../../assets/images/profile-pic.jpg")}
-              ></img>
-              </Fade>
-          </div>
-        </div>
       </div>
     </Fade>
   );

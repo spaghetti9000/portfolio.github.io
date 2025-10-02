@@ -65,49 +65,49 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java",
-      category: "Programming Language",
+      category: "Programming Languages",
       description: "I first learned Java at university and have since used it in multiple projects throughout my career. One example is the Box Packing Optimization project."
     },
     {
       skillName: "CSS",
       fontAwesomeClassname: "fab fa-css3-alt",
-      category: "Programming Language",
+      category: "Programming Languages",
       description: "All my experience with CSS was gained while creating this website. You can compare it with the original template to see how much progress I have made."
     },
     {
       skillName: "Python",
       fontAwesomeClassname: "fab fa-python",
-      category: "Programming Language",
+      category: "Programming Languages",
       description: "I have been using Python for more than three years. It is my preferred language for data analysis and small to medium projects. I also used it extensively for my bachelor thesis."
     },
     {
       skillName: "C",
       fontAwesomeClassname: "fas fa-code",
-      category: "Programming Language",
+      category: "Programming Languages",
       description: "I learned both C and C++ at university, focusing on programming fundamentals and program exploitation. I often apply this knowledge in binary exploitation Capture The Flag competitions."
     },
     {
       skillName: "Haskell",
       fontAwesomeClassname: "fas fa-code",
-      category: "Programming Language",
+      category: "Programming Languages",
       description: "I learned Haskell as part of a functional programming course at university. Although I have not used it since, the functional programming principles have strongly influenced how I approach software development."
     },
     {
       skillName: "Assembly",
       fontAwesomeClassname: "fas fa-microchip",
-      category: "Programming Language",
+      category: "Programming Languages",
       description: "I experimented with Assembly during a Processors course at university. My current knowledge mainly originates from working on binary exploitation challenges."
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js",
-      category: "Programming Language",
+      category: "Programming Languages",
       description: "My main experience with JavaScript comes from developing this website, which allowed me to deepen my understanding of web development."
     },
     {
       skillName: "SQL",
       fontAwesomeClassname: "fas fa-database",
-      category: "Programming Language",
+      category: "Programming Languages",
       description: "Although I do not consider myself an expert in SQL, I am capable of browsing databases and performing SQL injection attacks during security testing."
     },
     {

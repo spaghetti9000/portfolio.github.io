@@ -2,7 +2,7 @@
 
 /*React-headroom*/
 .headroom-wrapper {
-  max-height: 100px;
+  max-height: clamp(80px, 5vw, 100px);
 }
 
 /* header */
@@ -13,9 +13,13 @@
 }
 
 .dark-menu li a {
+  display: block;
+  padding: clamp(10px, 1vw, 20px) clamp(15px, 2vw, 30px);
   color: $textColorDark !important;
 }
-
+.dark-menu li{
+  float:none;
+}
 .dark-menu li a:hover {
   background-color: $buttonColor !important;
 }
@@ -23,11 +27,19 @@
 .header {
   background-color: $lightBackground1;
   max-width: 100%;
-  padding: 15px 20px;
-  margin: 0px auto;
+  padding: clamp(10px, 1.5vw, 20px) clamp(15px, 2vw, 30px);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
-
+.header .logo{
+ flex: 0 1 auto;
+}
 .header ul {
+  display:flex;
+  gap: clamp(10px, 1vw, 20px); // optional spacing between items
   margin: 0;
   padding: 0;
   list-style: none;
@@ -40,25 +52,26 @@
 
 .header li a {
   display: block;
-  padding: 15px 20px;
+  padding: clamp(10px, 1.5vw, 20px) clamp(15px, 2vw, 30px);
   color: $textColor;
   text-decoration: none;
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
+  text-align: center;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: $headerHoverBG;
-  border-radius: 10px;
+  border-radius: clamp(5px, 0.5vw, 10px);
 }
-
 
 .header .logo {
   display: block;
   flex: none;
   float: left;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.5rem);
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: clamp(5px, 1vw, 15px);
   line-height: normal;
 }
 
@@ -67,7 +80,7 @@
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
-  padding: 0 10px;
+  padding: 0 clamp(5px, 1vw, 10px);
 }
 
 /* menu */
@@ -81,10 +94,10 @@
 /* menu icon */
 
 .header .menu-icon {
+  display:none;
   cursor: pointer;
-  display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: clamp(15px, 2vw, 28px) clamp(10px, 2vw, 20px);
   position: relative;
   user-select: none;
 }
@@ -92,10 +105,10 @@
 .header .menu-icon .navicon {
   background: $iconBackground;
   display: block;
-  height: 2px;
+  height: clamp(2px, 0.2vw, 3px);
+  width: clamp(18px, 2vw, 25px);
   position: relative;
   transition: background 0.2s ease-out;
-  width: 18px;
 }
 
 .header .menu-icon .navicon-dark {
@@ -125,11 +138,11 @@
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+  top: clamp(3px, 0.5vw, 5px);
 }
 
 .header .menu-icon .navicon:after {
-  top: -5px;
+  top: clamp(-3px, -0.5vw, -5px);
 }
 
 /* menu btn */
@@ -139,7 +152,7 @@
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 486px;
+  max-height: clamp(300px, 25vw, 486px);
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -159,26 +172,8 @@
   top: 0;
 }
 
-/* 48em = 768px */
-
-@media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .header .menu {
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
-}
-@media (max-width: 960px) and (min-width: 768px) {
-  .header {
-    font-size: 12px;
-  }
+/* header list items */
+.header li {
+  float: left;
+  font-size: clamp(0.8rem, 1vw, 1rem);
 }

@@ -70,9 +70,11 @@
   color: $skillsColor;
 }
 .software-skills-list{
-  display: grid;
-  gap: 20px; /* spacing between items */
+  display: flex;
+  gap: clamp(30px, 3vw, 60px); /* spacing between items */
   grid-template-columns: repeat(auto-fill, minmax(120px, max-content));
   justify-content:center;
   place-items:center;
+  flex-wrap:wrap;
+  flex-direction:row;
 }
