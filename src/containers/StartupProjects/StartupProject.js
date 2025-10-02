@@ -90,13 +90,15 @@ export default function StartupProject() {
 											) : null}
 										</div>
 									</div>
-									{project.video ? (
-										<div className="project-video">
-											<video controls autoPlay muted loop title={project.name}>
-												<source src={project.video}></source>
-											</video>
-										</div>
-									) : null}
+                    {project.video ? (
+                      <div className="project-video">
+                        <video controls autoPlay muted loop title={project.name}>
+                          <source src={project.video} type="video/mp4" />
+                          {/* Optional fallback */}
+                          <p>Your browser does not support the video tag.</p>
+                        </video>
+                      </div>
+                    ) : null}
 								</div>
 							);
 						})}

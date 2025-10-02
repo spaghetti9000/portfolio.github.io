@@ -1,39 +1,31 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import {illustration, skillsSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { illustration, skillsSection } from "../../portfolio";
+import { Fade } from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!skillsSection.display) {
     return null;
   }
 
-const categories = Array.from(
-  new Set(skillsSection.skills.map(s => s.category).filter(Boolean))
-);
+  const categories = Array.from(
+    new Set(skillsSection.skills.map(s => s.category).filter(Boolean))
+  );
 
-const capitalizeWords = (str) =>
-  str
-    .split(" ")
-    .map((word) => word[0].toUpperCase() + word.slice(1))
-    .join(" ");
+  const capitalizeWords = (str) =>
+    str
+      .split(" ")
+      .map((word) => word[0].toUpperCase() + word.slice(1))
+      .join(" ");
   return (
 
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skills-main-div">
-            {/* {illustration.animated ? ( */}
-            {/*   <DisplayLottie animationData={codingPerson} /> */}
-            {/* ) : ( */}
-            {/*   <img */}
-            {/*     alt="Man Working" */}
-            {/*     src={require("../../assets/images/developerActivity.svg")} */}
-            {/*   ></img> */}
-            {/* )} */}
         <Fade right duration={1000}>
           <div className="skills-text-div">
             <h1
@@ -48,7 +40,7 @@ const capitalizeWords = (str) =>
                   : "subTitle skills-text-subtitle"
               }
             >
-              {skillsSection.subTitle} 
+              {skillsSection.subTitle}
             </p>
             <SoftwareSkill />
 

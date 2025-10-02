@@ -25,7 +25,7 @@ const greeting = {
   subTitle: emoji(
     "I consider myself determined, creative and versatile. Always trying to achieve my goals. \n\n" +
     "I believe in consistency, hard-work and teamwork. I am experienced in international environments and take pride on what I do.\n\n" +
-    "Currently following a Cyber-security Master in Radboud University. Deeply interested in cyber-security and systems architecture design.\n\n" +
+    "Currently following a Cybersecurity Master in Radboud University. Deeply interested in cybersecurity and systems architecture design.\n\n" +
     "I am passionate about sports, enjoy growing plants and playing CTFs.\n"
   ),
   resumeLink: "https://www.cs.ru.nl/bachelors-theses/2025/Marcelo_Ribero_Cerro___1100744___PhishGPT_-_Automating_HTML_Phishing_Emails_Using_ChatGPT.pdf", // Set to empty to hide the button
@@ -256,7 +256,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -274,7 +274,7 @@ const bigProjects = {
         "Key features include file import/export, box locking, and step-by-step reconstruction of the solution. \n\n" +
         " The application was developed using Spring Boot (Java) and React." +
         " ",
-      video: require("./assets/videos/box-packing-demo.mp4"),
+      video: require("./assets/videos/box-packing-demo-v3.mp4"),
       footerLink: [
         {
           name: "Visit Website",
@@ -464,7 +464,7 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {

@@ -20,7 +20,6 @@
 .project-card {
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
 	background-color: $lightBackground2;
 	padding: 1.5rem;
 	border-radius: 10px;
@@ -71,8 +70,12 @@
 
 .project-video {
 	display: flex;
-	position: left;
+  align-items: center;
 	justify-content: left;
+}
+.project-video video {
+  border-radius: 30px;
+  box-shadow: 0px 0px 40px -10px #d9dbdf
 }
 .projects-container {
 	display: flex;

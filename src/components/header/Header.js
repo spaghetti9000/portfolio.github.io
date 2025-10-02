@@ -44,12 +44,12 @@ function Header() {
         <ul>
           {viewSoftSkills && (
             <li>
-              <a href="#softSkills">SoftSkills</a>
+              <a href="#softSkills">Soft Skills</a>
             </li>
           )}
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">Hard Skills</a>
             </li>
           )}
           {viewExperience && (
@@ -87,9 +87,9 @@ function Header() {
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
+            {/* <a> */}
+            {/*   <ToggleSwitch /> */}
+            {/* </a> */}
           </li>
         </ul>
       </header>
