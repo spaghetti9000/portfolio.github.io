@@ -1,80 +1,79 @@
 @import "../../_globalColor";
 
 .skills-main-div {
-	display: flex;
-	width: 100%;
-	overflow: hidden;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
 }
 
 .skills-text-div {
-	margin-left: 50px;
+  margin-left: 50px;
 }
 
-.skills-main-div > * {
-	flex: 1;
-	margin-bottom: 10px;
+.skills-main-div>* {
+  flex: 1;
+  margin-bottom: 10px;
 }
 
 .skills-heading {
-	font-size: 56px;
-	font-weight: 400;
+  font-weight: 400;
+  font-size: 3rem;
 }
+
 .subTitle {
-	color: $subTitle;
+  color: $subTitle;
+  font-size: 1.3rem;
 }
 
 .skills-container {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 }
-.skills-category-title{
-  font-size: 20px;
-  text-align: center; 
+
+.skills-category-title {
+  font-size: 1.5rem;
+  text-align: center;
   margin-bottom: 20px;
   margin-top: -15px;
 }
-.skills-category-container{
-  width: clamp(20rem,20%,20%);
+
+.skills-category-container {
+  width: clamp(20rem, 20%, 20%);
   height: auto;
-  border: 1px solid rgba(211,211,211,0.397);
+  border: 1px solid rgba(211, 211, 211, 0.397);
   border-radius: 10px;
   padding: 3rem;
   font-size: 1rem;
-
-
+  flex: 1 1 auto;
 }
 
 /* Media Query */
 @media (max-width: 1380px) {
-	.skills-heading {
-		font-size: 40px;
-	}
+  .skills-heading {}
 }
+
 @media (max-width: 768px) {
-	.skills-heading {
-		font-size: 30px;
-		text-align: center;
-	}
-	.greeting-text-p {
-		font-size: 16px;
-		line-height: normal;
-	}
-	.skills-main-div {
-		flex-direction: column;
-	}
-	.skills-text-div {
-		margin-left: 0px;
-		margin: 20px;
-	}
-	.skills-text {
-		font-size: 16px;
-	}
-	.skills-text-subtitle {
-		font-size: 16px;
-		text-align: center;
-	}
-	.skills-image-div  {
-	 max-width:10px ; 	
-   order: 1;
-	}
+  .skills-heading {
+    text-align: center;
+  }
+
+  .skills-main-div {
+    flex-direction: column;
+  }
+
+  .skills-text-div {
+    margin-left: 0px;
+    margin: 20px;
+  }
+
+  .skills-text {}
+
+  .skills-text-subtitle {
+    text-align: center;
+  }
+
+  .skills-image-div {
+    max-width: 10px;
+    order: 1;
+  }
 }

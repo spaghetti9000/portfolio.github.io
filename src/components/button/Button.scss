@@ -6,7 +6,7 @@
   color: $textColorDark;
   font-weight: 70;
   width: max-content;
-  padding: 13px 22px;
+  padding: 0.5rem 1rem;
   text-transform: uppercase;
   border-radius: 6px;
   text-align: center;
@@ -14,24 +14,28 @@
   flex-wrap: wrap;
   display: flex;
   margin-top: 20px;
-  font-size: clamp(10px,0.8rem,1.5vw) ;
+  font-size: clamp(10px, 0.8rem, 1.5vw);
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
 }
+
 .main-button:hover {
   background-color: $darkBoxShadow2;
   color: $buttonColor;
   transition: all 0.3s ease 0s;
   transform: translateY(-3px);
 }
+
 .project-button {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-.project-button > .main-button {
+
+.project-button>.main-button {
   margin-right: 0 !important;
 }
+
 /* Media Query */
 // @media (max-width: 768px) {
 //   .main-button {
