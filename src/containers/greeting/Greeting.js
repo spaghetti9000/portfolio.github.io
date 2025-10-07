@@ -1,23 +1,24 @@
-import React, {useContext} from "react";
-import {Fade} from "react-reveal";
+import React, { useContext } from "react";
+import { Fade } from "react-awesome-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
+import { illustration, greeting } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
+import { Slide, Bounce } from "react-awesome-reveal";
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="40px">
-      <div className="greet-main" id="greeting">
-        <div className="greeting-main">
+    <div className="greet-main" id="greeting">
+      <div className="greeting-main">
+        <Slide triggerOnce>
           <div className="greeting-text-div">
             <div>
               <h1
@@ -40,28 +41,32 @@ export default function Greeting() {
               <SocialMedia />
             </div>
           </div>
+
+        </Slide>
+        <Bounce triggerOnce direction="right" delay={300}>
           <div className="greeting-image-div ">
-              <img
-                alt="Profile picture"
-                src={require("../../assets/images/profile-pic.jpg")}
-              ></img>
+            <img
+              alt="Profile picture"
+              src={require("../../assets/images/profile-pic.jpg")}
+            ></img>
           </div>
+        </Bounce>
 
-        </div>
-
-              <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
-                  <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
-                    className="download-link-button"
-                  >
-                    <Button text="Download my resume" />
-                  </a>
-                )}
-              </div>
       </div>
-    </Fade>
+      <Slide triggerOnce delay={1000}>
+        <div className="button-greeting-div">
+          <Button text="Contact me" href="#contact" />
+          {greeting.resumeLink && (
+            <a
+              href={require("./resume.pdf")}
+              download="Resume.pdf"
+              className="download-link-button"
+            >
+              <Button text="Download my resume" />
+            </a>
+          )}
+        </div>
+      </Slide>
+    </div >
   );
 }

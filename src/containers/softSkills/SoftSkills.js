@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import StyleContext from "../../contexts/StyleContext";
 import "./SoftSkills.scss";
 import { softSkills } from "../../portfolio";
-import { Fade } from "react-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 export default function SoftSkills() {
   const { isDark } = useContext(StyleContext);
@@ -12,7 +12,7 @@ export default function SoftSkills() {
   }
   return (
     <div className={isDark ? "dark-mode soft-skills-main-div main" : "soft-skills main"} id="softskills">
-      <Fade left duration={1000}>
+      <Slide triggerOnce fraction={0.2}>
 
         <div className={isDark ? "dark-mode soft-skills-wrapper" : "soft-skills-wrapper"}>
           {/* Main section title */}
@@ -40,6 +40,9 @@ export default function SoftSkills() {
             </div>
           </div>
         </div>
+      </Slide>
+
+      <Slide triggerOnce fraction={0.2} direction={"right"}>
         {/* Languages wrapper with title above list */}
         <div className={isDark ? "dark-mode language-card-wrapper" : "language-card-wrapper"}>
           <span className={isDark ? "dark-mode soft-skills-title" : "soft-skills-title"}>
@@ -65,7 +68,7 @@ export default function SoftSkills() {
             ))}
           </div>
         </div>
-      </Fade >
+      </Slide >
     </div >
   );
 }

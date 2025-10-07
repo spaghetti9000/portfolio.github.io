@@ -9,72 +9,108 @@
   text-align: center;
 }
 
-.software-skill-inline{
+.software-skill-inline {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 60px;
   height: auto;
-  position:relative;
+  gap: clamp(10px, 0.7rem, 20px);
+  position: relative;
   cursor: pointer;
 
 }
 
-.software-skill-inline > i {
+
+.software-skill-description {
+  position: relative;
+  opacity: 0;
+  max-height: 0;
+  max-width: 0;
+  padding: 0;
+  /* collapse padding */
+  border-radius: 10px;
+  // transform: translateY(-10px);
+  // overflow: hidden;
+  // transition: max-height 2s ease, opacity 2s ease, padding 0.3s ease, transform 0.3s ease;
+}
+
+.software-skill-inline.active .software-skill-description {
+  opacity: 1;
+  max-height: 200px;
+  max-width: 100%;
+  /* enough to fit content */
+  padding: 0.5rem 1rem;
+  position: static;
+  /* fixed the missing semicolon */
+}
+
+.software-skill-inline>i {
   color: $subTitle;
 }
+
 .on-hover {
+  display: flex;
   position: absolute;
   top: 50%;
-  left: 120%; /* move it to the right of the icon */
+  left: 120%;
+  /* move it to the right of the icon */
   transform: translateY(-50%);
   background-color: rgba(67, 69, 87, 0.95);
   color: white;
   padding: 6px 10px;
-  white-space:pre-wrap;
+  white-space: pre-wrap;
   z-index: 10;
-  pointer-events: none; /* optional: makes tooltip ignore mouse */
+  pointer-events: none;
+  /* optional: makes tooltip ignore mouse */
   padding: 2rem;
 
-  width: clamp(200%,420%,500%);
+  width: clamp(200%, 420%, 500%);
   text-align: justify;
   word-spacing: 0.05em;
   border-radius: 20px;
-  border: 1px solid rgba(211,211,211,0.5);
+  border: 1px solid rgba(211, 211, 211, 0.5);
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-  
-.software-skill-inline:hover  .on-hover{
+
+.software-skill-inline:hover .on-hover {
   opacity: 1;
-  transform: translateY(-50%),translateX(10px);
+  transform: translateY(-50%), translateX(10px);
 }
 
-.software-skills-main-div{
+.software-skills-main-div {
   display: flex;
-  gap:16px;
+  gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
-  
+
 }
-.software-skill-inline > i:hover {
+
+.software-skill-inline>i:hover {
   color: $skillsColor;
 }
-.software-skill-inline > p {
+
+.software-skill-inline>p {
   color: $subTitle;
   font-size: 10px;
 }
-.software-skill-inline > i:hover ~ p {
+
+.skill-name {
+  font-size: 0.8rem;
+}
+
+.software-skill-inline>i:hover~p {
   color: $skillsColor;
 }
-.software-skills-list{
+
+.software-skills-list {
   display: flex;
-  gap: clamp(30px, 3vw, 60px); /* spacing between items */
-  grid-template-columns: repeat(auto-fill, minmax(120px, max-content));
-  justify-content:center;
-  place-items:center;
-  flex-wrap:wrap;
-  flex-direction:row;
+  gap: clamp(30px, 3rem, 60px);
+  /* spacing between items */
+  justify-content: space-evenly;
+  place-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }

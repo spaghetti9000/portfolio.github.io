@@ -4,9 +4,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
   gap: clamp(10px, 2vw, 20px);
   padding: clamp(10px, 2vw, 20px);
   border-radius: clamp(8px, 1vw, 12px);
+}
+
+.soft-skills-main-div>* {
+  flex: 1;
 }
 
 .soft-skills {
@@ -21,7 +27,7 @@
 
 .soft-skills-wrapper {
   flex: 1 1 clamp(200px, 65%, 1000px);
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: clamp(10px, 1.5vw, 1rem);
@@ -36,6 +42,7 @@
   flex: 1 1 clamp(150px, 30%, 400px);
   display: flex;
   width: 30%;
+  margin-left: auto;
   flex-direction: column;
   /* title above list */
   align-items: flex-end;
@@ -71,9 +78,8 @@
   list-style: none;
   font-size: 1rem;
   border: 1px solid rgba(211, 211, 211, 0.397);
-  padding: clamp(5px, 1vw, 1rem);
+  padding: clamp(10px, 1rem, 2rem);
   border-radius: clamp(5px, 1vw, 8px);
-  width: clamp(80%, 100%, 100%);
 }
 
 .soft-skill-item strong {
@@ -119,15 +125,13 @@
 @media (max-width: 768px) {
   .language-card-wrapper {
     width: 100%;
-    /* full width */
+    align-self: center;
     flex: 1 1 100%;
-    /* allow it to stretch */
     align-items: center;
-    /* center horizontally */
     text-align: center;
-    /* center text */
+    // margin-left: auto;
+    // margin-right: auto;
     margin-top: clamp(80px, 2vw, 20px);
-    /* spacing below soft-skills */
   }
 
   .language-card {

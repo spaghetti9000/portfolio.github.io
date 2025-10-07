@@ -8,10 +8,9 @@
 /* header */
 
 .dark-menu {
-  background: radial-gradient(circle at center, #55198b 10%, #3b0e5f 100%);
+  background: #55198b !important;
   color: $textColorDark;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
 }
 
 .dark-menu li a {
