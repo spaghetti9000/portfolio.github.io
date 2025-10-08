@@ -44,7 +44,7 @@ export default function SoftSkills() {
 
       <Slide triggerOnce fraction={0.2} direction={"right"}>
         {/* Languages wrapper with title above list */}
-        <div className={isDark ? "dark-mode language-card-wrapper" : "language-card-wrapper"}>
+        <div id="languages" className={isDark ? "dark-mode language-card-wrapper" : "language-card-wrapper"}>
           <span className={isDark ? "dark-mode soft-skills-title" : "soft-skills-title"}>
             {softSkills.languageTitle}
           </span>

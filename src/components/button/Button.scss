@@ -19,11 +19,15 @@
   transition: all 0.3s ease-in-out 0s;
 }
 
-.main-button:hover {
-  background-color: $darkBoxShadow2;
-  color: $buttonColor;
-  transition: all 0.3s ease 0s;
+
+.on-hover {
+  background-color: $mainAccent;
+  transition: all 0.3s ease-in-out 0s;
   transform: translateY(-3px);
+}
+
+.main-button:hover {
+  @extend .on-hover;
 }
 
 .project-button {

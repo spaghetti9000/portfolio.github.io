@@ -1,4 +1,5 @@
 @import "../../_globalColor";
+@import "../button/Button";
 
 /*React-headroom*/
 .headroom-wrapper {
@@ -8,7 +9,7 @@
 /* header */
 
 .dark-menu {
-  background: #55198b !important;
+  background: $secondAccent !important;
   color: $textColorDark;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
@@ -17,20 +18,23 @@
   display: block;
   padding: clamp(5px, 0.5vw, 20px) clamp(5px, 1vw, 30px);
   color: $textColorDark !important;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .dark-menu li {
   float: none;
 }
 
+
 .dark-menu li a:hover {
-  background-color: $buttonColor !important;
+  @extend .on-hover;
+
+  transform: translateY(0px);
 }
 
 .header {
   background-color: $lightBackground1;
   max-width: 100%;
-  padding: clamp(5px, 0.5vw, 20px) clamp(5px, 1vw, 30px);
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -44,7 +48,6 @@
 
 .header ul {
   display: flex;
-  gap: clamp(10px, 1vw, 20px); // optional spacing between items
   margin: 0;
   padding: 0;
   list-style: none;
@@ -56,19 +59,18 @@
 }
 
 .header li a {
-  display: block;
+  display: flex;
   padding: clamp(10px, 1.5vw, 20px) clamp(15px, 2vw, 30px);
   color: $textColor;
   text-decoration: none;
   font-size: 1.1rem;
   text-align: center;
+  align-items: center;
+
 }
 
 .header li a:hover,
-.header .menu-btn:hover {
-  background-color: $headerHoverBG;
-  border-radius: clamp(5px, 0.5vw, 10px);
-}
+.header .menu-btn:hover {}
 
 .header .logo {
   display: none;
@@ -182,4 +184,10 @@
   display: flex;
   flex-shrink: 1;
   font-size: 1rem;
+}
+
+@media (max-width:760px) {
+  .header {
+    display: none;
+  }
 }

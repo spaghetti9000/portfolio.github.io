@@ -46,7 +46,13 @@ function Header() {
           <ul>
             {viewSoftSkills && (
               <li>
-                <a href="#softSkills">Soft Skills</a>
+                <a href="#softskills">Soft Skills</a>
+              </li>
+            )
+            }
+            {viewSoftSkills && (
+              <li>
+                <a href="#languages">Languages</a>
               </li>
             )}
             {viewSkills && (

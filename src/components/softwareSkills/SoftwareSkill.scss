@@ -15,12 +15,15 @@
   align-items: center;
   text-align: center;
   height: auto;
-  gap: clamp(10px, 0.7rem, 20px);
+  gap: clamp(10px, 2rem, 20px);
   position: relative;
   cursor: pointer;
 
 }
 
+.software-skill-inline i {
+  transition: all 0.3s ease-in-out;
+}
 
 .software-skill-description {
   position: relative;
@@ -46,7 +49,22 @@
 }
 
 .software-skill-inline>i {
-  color: $subTitle;
+  color: $thirdAccent;
+}
+
+.software-skill-inline.active i {
+  color: $mainAccent;
+  /* or any color/style */
+  transform: scale(1.4);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.software-skill-inline.active span {
+  color: $mainAccent;
+  /* or any color/style */
+  transform: scale(1.4);
+  transition: all 0.3s ease-in-out;
 }
 
 .on-hover {
@@ -88,8 +106,11 @@
 
 }
 
+
 .software-skill-inline>i:hover {
-  color: $skillsColor;
+  color: $mainAccent;
+  transition: all 0.3s ease-in-out 0s;
+
 }
 
 .software-skill-inline>p {
@@ -101,9 +122,6 @@
   font-size: 0.8rem;
 }
 
-.software-skill-inline>i:hover~p {
-  color: $skillsColor;
-}
 
 .software-skills-list {
   display: flex;
