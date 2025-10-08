@@ -54,6 +54,7 @@ export default function SoftSkills() {
           </div>
           <div className={isDark ? "dark-mode language-card" : "language-card"}>
             {softSkills.languages.map((lang, i) => (
+
               <div key={i} className="soft-skill-language-item">
                 <li className={isDark ? "dark-mode" : ""}>
                   <div className="language">{lang.language}</div>

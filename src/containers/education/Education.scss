@@ -1,5 +1,5 @@
 .education-heading {
-  font-size: 56px;
+  font-size: 3rem;
   font-weight: 400;
 }
 
@@ -12,7 +12,7 @@
   margin-top: 2rem;
 }
 
-.education-section > * {
+.education-section>* {
   flex: 1;
   margin-bottom: 30px;
 }
@@ -23,13 +23,20 @@
   padding-top: 20px;
 }
 
+.education-text-bullets ul li {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 @media (max-width: 1380px) {
   .education-card-container {
     padding-top: 0px;
   }
+
   .education-heading {
-    font-size: 40px;
+    font-size: 3rem;
   }
+
   .education-text-subtitle {
     font-size: 18px;
     text-align: center;
@@ -40,10 +47,12 @@
   .education-card-container {
     padding-top: 0px;
   }
+
   .education-heading {
-    font-size: 30px;
+    font-size: 3rem;
     text-align: center;
   }
+
   .education-text-subtitle {
     font-size: 16px;
   }
