@@ -22,12 +22,12 @@ const illustration = {
 const greeting = {
   username: "Marcelo Ribero Cerro",
   title: "Hey there, I'm Marcelo",
-  subTitle: emoji(
-    "I consider myself determined, creative and versatile. Always trying to achieve my goals. \n\n" +
-    "I believe in consistency, hard-work and teamwork. I am experienced in international environments and take pride on what I do.\n\n" +
-    "Currently following a Cybersecurity Master in Radboud University. Deeply interested in cybersecurity and systems architecture design.\n\n" +
-    "I am passionate about sports, enjoy growing plants and playing CTFs.\n"
-  ),
+  subTitle:
+    "Currently following a cybersecurity Master in Radboud University. Deeply interested in cybersecurity and systems architecture design.\n\n" +
+    "My hobbies are climbing, learning niche skills and playing CTFs! When I have time I try to take care of my plants :)\n\n" +
+    "I consider myself determined, positive and versatile. I am always trying to achieve my goals. \n\n" +
+    "I believe in consistency, hardwork and teamwork. I am experienced in international environments and take pride on what I do.\n\n"
+  ,
   resumeLink: "https://www.cs.ru.nl/bachelors-theses/2025/Marcelo_Ribero_Cerro___1100744___PhishGPT_-_Automating_HTML_Phishing_Emails_Using_ChatGPT.pdf", // Set to empty to hide the button
   displayGreeting: true, // Set false to hide this section, defaults to true
 };
@@ -36,7 +36,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/spaghetti9000",
-  linkedin: "www.linkedin.com/in/marcelo-ribero-cerro-7b56ba323",
+  linkedin: "https://www.linkedin.com/in/marcelo-ribero-cerro-7b56ba323",
 
   gmail: "marcelo.riberocerro@protonmail.com",
   // gitlab: "https://gitlab.com/saadpasta",
@@ -315,19 +315,19 @@ const softSkills = {
   softSkills: [   // <-- use colon, not equal sign
     {
       title: "Leadership",
-      description: "Led a team of 5 in a university project, coordinating tasks and deadlines."
+      description: "I tend to take initiative when I feel confident in my knowledge."
     },
     {
       title: "Resilience",
-      description: "Overcame challenges during tight deadlines while maintaining quality work."
+      description: "I have faced my fair share of challenges and I always push through. I am not afraid of failure because eventually I know that I will succeed."
     },
     {
       title: "Positivity",
-      description: "Consistently encouraged team members and maintained morale under pressure."
+      description: "I believe being positive is a choice. I like to think that by being positive I can make people around me feel better and do better."
     },
     {
       title: "Willingness to Learn",
-      description: "Took initiative to learn new tools and technologies to improve project outcomes."
+      description: "I think learning is cool and fun. There is always something interesting learn and understand. Knowledge is power"
     }
   ],
   languages: [
