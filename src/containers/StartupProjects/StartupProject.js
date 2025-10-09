@@ -77,8 +77,8 @@ export default function StartupProject() {
                                 key={i}
                                 className={
                                   isDark
-                                    ? "dark-mode project-tag"
-                                    : "project-tag"
+                                    ? "dark-mode project-tags"
+                                    : "project-tags"
                                 }
                                 onClick={() => openUrlInNewTab(link.url)}
                               >

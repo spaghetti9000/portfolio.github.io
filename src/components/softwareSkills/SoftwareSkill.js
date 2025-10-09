@@ -36,6 +36,15 @@ export default function SoftwareSkill() {
     };
   }, []);
 
+  // Activate a random skill once when visible
+  useEffect(() => {
+    if (isVisible && !activeSkill && !userClicked) {
+      const randomSkill =
+        allSkills[Math.floor(Math.random() * allSkills.length)];
+      setActiveSkill(randomSkill.skillName);
+    }
+  }, [isVisible, allSkills, activeSkill, userClicked]);
+
   // Auto-change activeSkill only when visible
   useEffect(() => {
     if (!isVisible) return;
@@ -46,11 +55,10 @@ export default function SoftwareSkill() {
           allSkills[Math.floor(Math.random() * allSkills.length)];
         setActiveSkill(randomSkill.skillName);
       }
-    }, 5000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [userClicked, allSkills, isVisible]);
-
   const handleClick = (skillName) => {
     setUserClicked(true);
     setActiveSkill((prev) => (prev === skillName ? null : skillName));
@@ -72,14 +80,14 @@ export default function SoftwareSkill() {
             <div className="software-skills-list">
               {skillsSection.softwareSkills
                 .filter((s) => s.category === cat)
-                .map((skill) => {
+                .map((skill, idx) => {
                   const isActive = activeSkill === skill.skillName;
 
                   return (
-                    <motion.div
-                      key={skill.skillName}
+                    <motion.div key={skill.skillName}
                       layout
-                      className={`software-skill-inline ${isActive ? "active" : ""}`}
+                      className={`software-skill-inline ${isActive ? "active" : ""}`
+                      }
                       onClick={() => handleClick(skill.skillName)}
                       transition={{ layout: { duration: 0.4, ease: "easeInOut" } }}
                       style={{ cursor: "pointer" }}
@@ -108,8 +116,9 @@ export default function SoftwareSkill() {
                 })}
             </div>
           </LayoutGroup>
-        </div>
-      ))}
-    </div>
+        </div >
+      ))
+      }
+    </div >
   );
 }

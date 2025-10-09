@@ -47,7 +47,7 @@ export default function Greeting() {
           <div className="greeting-image-div ">
             <img
               alt="Profile picture"
-              src={require("../../assets/images/profile-pic.jpg")}
+              src={require("../../assets/images/profile-pic-cropped2.JPG")}
             ></img>
           </div>
         </Bounce>
