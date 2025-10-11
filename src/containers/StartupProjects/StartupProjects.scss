@@ -59,8 +59,9 @@
 
 .project-content {
   border-radius: 10px;
-  width: clamp(300px, 500px, 850px);
+  width: clamp(300px, 700px, 850px);
   flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .project-image {

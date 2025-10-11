@@ -8,19 +8,23 @@
   color: $textColorDark;
 }
 
-.contact-div-main > * {
+.contact-div-main>* {
   flex: 1;
 }
 
 .contact-title {
-  font-size: 65px;
+  font-size: 4rem;
   font-weight: 400;
+}
+
+.contact-subtitle {
+  font-size: 1.5rem;
 }
 
 .contact-detail,
 .contact-detail-email {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   color: $subTitle;
   text-decoration: none;
@@ -42,10 +46,11 @@
   margin-top: 4rem;
 }
 
-.contact-header{
-  max-width:100%;
+.contact-header {
+  max-width: 100%;
 }
-.contact-image-div > img {
+
+.contact-image-div>img {
   max-width: 100%;
   height: auto;
   margin-left: 1.5rem;
@@ -53,7 +58,8 @@
 }
 
 /* Media Query */
-@media (max-width: 1380px), (max-width: 768px) {
+@media (max-width: 1380px),
+(max-width: 768px) {
   .contact-title {
     font-size: 56px;
     font-weight: 400;
@@ -78,7 +84,7 @@
 
   .contact-detail,
   .contact-detail-email {
-    font-size: clamp(12px,14px,20px);
+    font-size: clamp(12px, 14px, 20px);
   }
 
   .contact-image-div {

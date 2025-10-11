@@ -66,31 +66,36 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java",
       category: "Programming Languages",
-      description: "I first learned Java at university and have since used it in multiple projects throughout my career. One example is the Box Packing Optimization project."
+      description: "I first learned Java at university and have since used it in multiple projects throughout my career. One example is the Box Packing Optimization project.",
+      image: require("./assets/images/java-coffee-cup-logo--v2.png")
     },
     {
       skillName: "CSS",
       fontAwesomeClassname: "fab fa-css3-alt",
       category: "Programming Languages",
-      description: "All my experience with CSS was gained while creating this website. You can compare it with the original template to see how much progress I have made."
+      description: "All my experience with CSS was gained while creating this website. You can compare it with the original template to see how much progress I have made.",
+      image: require("./assets/images/CSS3_logo.svg.png")
     },
     {
       skillName: "Python",
       fontAwesomeClassname: "fab fa-python",
       category: "Programming Languages",
-      description: "I have been using Python for more than three years. It is my preferred language for data analysis and small to medium projects. I also used it extensively for my bachelor thesis."
+      description: "I have been using Python for more than three years. It is my preferred language for data analysis and small to medium projects. I also used it extensively for my bachelor thesis.",
+      image: require("./assets/images/python.png")
     },
     {
       skillName: "C",
       fontAwesomeClassname: "fas fa-code",
       category: "Programming Languages",
-      description: "I learned both C and C++ at university, focusing on programming fundamentals and program exploitation. I often apply this knowledge in binary exploitation Capture The Flag competitions."
+      description: "I learned both C and C++ at university, focusing on programming fundamentals and program exploitation. I often apply this knowledge in binary exploitation Capture The Flag competitions.",
+      image: require("./assets/images/C_Programming_Language.svg.png")
     },
     {
       skillName: "Haskell",
       fontAwesomeClassname: "fas fa-code",
       category: "Programming Languages",
-      description: "I learned Haskell as part of a functional programming course at university. Although I have not used it since, the functional programming principles have strongly influenced how I approach software development."
+      description: "I learned Haskell as part of a functional programming course at university. Although I have not used it since, the functional programming principles have strongly influenced the way I code.",
+      image: require("./assets/images/Haskell-Logo.svg.png")
     },
     {
       skillName: "Assembly",
@@ -102,61 +107,71 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js",
       category: "Programming Languages",
-      description: "My main experience with JavaScript comes from developing this website, which allowed me to deepen my understanding of web development."
+      description: "My main experience with JavaScript comes from developing this website, which allowed me to deepen my understanding of web development.",
+      image: require("./assets/images/javascript.png")
     },
     {
       skillName: "SQL",
       fontAwesomeClassname: "fas fa-database",
       category: "Programming Languages",
-      description: "Although I do not consider myself an expert in SQL, I am capable of browsing databases and performing SQL injection attacks during security testing."
+      description: "Although I do not consider myself an expert in SQL, I am capable of browsing databases and performing SQL injection attacks during security testing.",
+      image: require("./assets/images/sql-database.png")
     },
     {
       skillName: "Git",
       fontAwesomeClassname: "fab fa-git-alt",
       category: "Tools",
-      description: "Since discovering Git at university, I have used it in all my projects. I consider myself proficient in version control and collaborative development workflows."
+      description: "Since discovering Git at university, I have used it in all my projects. I consider myself proficient in version control and collaborative development workflows.",
+      image: require("./assets/images/Git_icon.svg.png")
     },
     {
       skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker",
       category: "Tools",
-      description: "I have used Docker in several projects. Although I am not an expert, I am capable of configuring it and ensuring it functions efficiently."
+      description: "I have used Docker in several projects. Although I am not an expert, I am capable of configuring it and ensuring it functions efficiently.",
+      image: require("./assets/images/docker.png")
     },
     {
       skillName: "LaTeX",
       fontAwesomeClassname: "fas fa-file-alt",
       category: "Tools",
-      description: "I use LaTeX regularly for document creation, including reports and presentations, and I am very comfortable working with it."
+      description: "I use LaTeX regularly for document creation, including reports and presentations, and I am very comfortable working with it.",
+      image: require("./assets/images/latex.png")
     },
     {
       skillName: "SCRUM",
       fontAwesomeClassname: "fas fa-project-diagram",
       category: "Frameworks & Libraries",
-      description: "My main experience with SCRUM was during the Box Packing Optimization project, where I served as the SCRUM master. I am now very familiar with its principles and workflow."
+      description: "My main experience with SCRUM was during the Box Packing Optimization project, where I served as the SCRUM master. I am now very familiar with its principles and workflow.",
+      image: require("./assets/images/scrum.png")
     },
     {
       skillName: "CI/CD",
       fontAwesomeClassname: "fas fa-sync-alt",
       category: "Frameworks & Libraries",
-      description: "I implemented a Continuous Integration and Continuous Deployment pipeline from scratch using GitHub Actions, which provided me with practical experience in the process."
+      description: "I implemented a Continuous Integration and Continuous Deployment pipeline from scratch using GitHub Actions, which provided me with practical experience in the process.",
+      image: require("./assets/images/CiCd.png")
     },
     {
       skillName: "Spring Boot",
       fontAwesomeClassname: "fas fa-leaf",
       category: "Frameworks & Libraries",
-      description: "I gained all my experience with Spring Boot while working on the Box Packing Optimization project, where I used it for backend development."
+      description: "I gained all my experience with Spring Boot while working on the Box Packing Optimization project, where I used it for backend development.",
+      image: require("./assets/images/Spring_Boot.svg.png")
     },
     {
       skillName: "React",
       fontAwesomeClassname: "fab fa-react",
       category: "Frameworks & Libraries",
-      description: "My main experience with React comes from building this website and developing the frontend for the Box Packing Optimization project."
+      description: "My main experience with React comes from building this website and developing the frontend for the Box Packing Optimization project.",
+      image: require("./assets/images/React-icon.svg.png")
     },
     {
       skillName: "Kali Linux Toolkit",
       fontAwesomeClassname: "fas fa-terminal",
       category: "Tools",
-      description: "I became familiar with the Kali Linux toolkit through Capture The Flag competitions and cybersecurity challenges on platforms such as TryHackMe, PicoCTF, and Hack The Box."
+      description: "I became familiar with the Kali Linux toolkit through Capture The Flag competitions and cybersecurity challenges on platforms such as TryHackMe, PicoCTF, and Hack The Box.",
+      image: require("./assets/images/Kali-dragon-icon.svg.png")
     }
   ],
   display: true, // Set false to hide this section, defaults to true
@@ -334,8 +349,8 @@ const softSkills = {
     { language: "Spanish", level: "Native" },
     { language: "English", level: "Full Professional Proficiency", certificate: "C1 Cambridge" },
     { language: "Italian", level: "Limited Professional Proficiency" },
-    { language: "Japanese", level: "Elementary Proficiency" },
-    { language: "Dutch", level: "Elementary Proficiency" }
+    { language: "Dutch", level: "Elementary Proficiency" },
+    { language: "Japanese", level: "Elementary Proficiency" }
   ]
 };
 // Achievement Section

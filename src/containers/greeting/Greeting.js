@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Fade } from "react-awesome-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
@@ -9,7 +8,7 @@ import Button from "../../components/button/Button";
 import { illustration, greeting } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
-import { Slide, Bounce } from "react-awesome-reveal";
+import { Slide, Bounce, Fade } from "react-awesome-reveal";
 export default function Greeting() {
   const { isDark } = useContext(StyleContext);
   if (!greeting.displayGreeting) {
@@ -43,14 +42,14 @@ export default function Greeting() {
           </div>
 
         </Slide>
-        <Bounce triggerOnce direction="right" delay={300}>
+        <Slide triggerOnce direction="right" delay={600}>
           <div className="greeting-image-div ">
             <img
               alt="Profile picture"
               src={require("../../assets/images/profile-pic-cropped2.JPG")}
             ></img>
           </div>
-        </Bounce>
+        </Slide>
 
       </div>
       <Slide triggerOnce delay={1000}>

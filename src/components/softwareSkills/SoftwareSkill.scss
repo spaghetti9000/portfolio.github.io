@@ -49,21 +49,42 @@
 }
 
 .software-skill-inline>i {
-  color: $thirdAccent;
+  color:
+    #828282;
 }
+
+.software-skill-inline img {
+  filter: grayscale(100%) brightness(100%) sepia(100%) hue-rotate(0deg) saturate(0%) contrast(75%);
+  width: auto;
+  height: 4rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.software-skill-inline.active img,
+.software-skill-inline img:hover {
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(0%);
+}
+
+.software-skill-inline.active img {
+  width: auto;
+  height: 5rem;
+}
+
+
 
 .software-skill-inline.active i {
   color: $mainAccent;
-  /* or any color/style */
+
   transform: scale(1.4);
   transition: all 0.3s ease-in-out;
 }
 
 
 .software-skill-inline.active span {
-  color: $mainAccent;
   /* or any color/style */
   transform: scale(1.4);
+  font-weight: bold;
   transition: all 0.3s ease-in-out;
 }
 

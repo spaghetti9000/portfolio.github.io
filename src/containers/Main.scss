@@ -3,5 +3,14 @@
 .dark-mode {
   background-color: $darkBackground;
   color: white;
+  // Modfiy this line for changing the background pattern. Current: Circles
+
+  background-image:
+    radial-gradient(circle 12px at 10px 10px, rgba(0, 0, 0, 0.10) 70%, transparent 51%);
+  background-size: 40px 40px;
   transition: "0.1s";
+}
+
+.dark-mode * {
+  background: transparent;
 }

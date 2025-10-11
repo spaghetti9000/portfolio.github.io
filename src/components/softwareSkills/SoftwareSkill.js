@@ -24,26 +24,32 @@ export default function SoftwareSkill() {
       ([entry]) => {
         setIsVisible(entry.intersectionRatio >= 0.3);
       },
-      { threshold: [0, 0.2, 1] }
+      { threshold: [0, 0.3, 1] }
     );
 
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
+    if (containerRef.current) observer.observe(containerRef.current);
 
     return () => {
       if (containerRef.current) observer.unobserve(containerRef.current);
     };
   }, []);
 
-  // Activate a random skill once when visible
+  // Activate first skill when becoming visible, deactivate when hidden
   useEffect(() => {
+    let timeout;
+
     if (isVisible && !activeSkill && !userClicked) {
-      const randomSkill =
-        allSkills[Math.floor(Math.random() * allSkills.length)];
-      setActiveSkill(randomSkill.skillName);
+      timeout = setTimeout(() => {
+        const firstCategory = categories[0];
+        const firstSkill = allSkills.find((s) => s.category === firstCategory);
+        if (firstSkill) setActiveSkill(firstSkill.skillName);
+      }, 500); // wait 0.5 second
+    } else if (!isVisible && !userClicked) {
+      setActiveSkill(null); // reset when not visible
     }
-  }, [isVisible, allSkills, activeSkill, userClicked]);
+
+    return () => clearTimeout(timeout);
+  }, [isVisible, activeSkill, userClicked, allSkills, categories]);
 
   // Auto-change activeSkill only when visible
   useEffect(() => {
@@ -92,7 +98,11 @@ export default function SoftwareSkill() {
                       transition={{ layout: { duration: 0.4, ease: "easeInOut" } }}
                       style={{ cursor: "pointer" }}
                     >
-                      <i className={skill.fontAwesomeClassname + " fa-4x"}></i>
+                      {skill.image ? (
+                        <img src={skill.image} alt={skill.skillName} className="w-16 h-16" />
+                      ) : (
+                        <i className={skill.fontAwesomeClassname + " fa-4x"}></i>
+                      )}
                       <span className="skill-name">{skill.skillName}</span>
 
                       <AnimatePresence>
