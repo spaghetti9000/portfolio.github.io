@@ -189,7 +189,7 @@ const educationInfo = {
       subHeader: "Master's Degree in Cybersecurity",
       duration: "September 2025 - Present",
       desc: "",
-      descBullets: [""],
+      descBullets: "",
     },
 
     {
@@ -198,7 +198,7 @@ const educationInfo = {
       subHeader: "Exchange Semester, Minor on Japanese Language",
       duration: "August 2024 - December 2024",
       desc: "Studied the japanese language and culture",
-      descBullets: [""],
+      descBullets: "",
     },
     {
       schoolName: "Radboud University",
