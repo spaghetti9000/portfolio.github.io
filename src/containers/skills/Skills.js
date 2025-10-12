@@ -7,6 +7,7 @@ import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 import { Slide } from "react-awesome-reveal";
+import { motion } from "framer-motion";
 export default function Skills() {
   const { isDark } = useContext(StyleContext);
   if (!skillsSection.display) {

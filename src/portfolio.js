@@ -66,14 +66,15 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java",
       category: "Programming Languages",
-      description: "I first learned Java at university and have since used it in multiple projects throughout my career. One example is the Box Packing Optimization project.",
+      description: "I first learned Java at university. Since that I have used it in multiple projects throughout my career." +
+        "I feel very confident with the language. One example of a Java project is the Box Packing Optimization, where I developed a Java Spring Boot backend API system.",
       image: require("./assets/images/java-coffee-cup-logo--v2.png")
     },
     {
       skillName: "CSS",
       fontAwesomeClassname: "fab fa-css3-alt",
       category: "Programming Languages",
-      description: "All my experience with CSS was gained while creating this website. You can compare it with the original template to see how much progress I have made.",
+      description: "All my experience with CSS was gained while creating this website. You can compare it with the original template to see how much progress I have made! The link to the template is on the github README",
       image: require("./assets/images/CSS3_logo.svg.png")
     },
     {
@@ -87,27 +88,27 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "C",
       fontAwesomeClassname: "fas fa-code",
       category: "Programming Languages",
-      description: "I learned both C and C++ at university, focusing on programming fundamentals and program exploitation. I often apply this knowledge in binary exploitation Capture The Flag competitions.",
+      description: "I learned both C and C++ at university, focusing on programming fundamentals and program exploitation. I often apply this knowledge for binary exploitation in Capture The Flag competitions.",
       image: require("./assets/images/C_Programming_Language.svg.png")
     },
     {
       skillName: "Haskell",
       fontAwesomeClassname: "fas fa-code",
       category: "Programming Languages",
-      description: "I learned Haskell as part of a functional programming course at university. Although I have not used it since, the functional programming principles have strongly influenced the way I code.",
+      description: "I learned Haskell as part of a functional programming course at university. Although I have not used it since, the functional programming principles have influenced the way I code.",
       image: require("./assets/images/Haskell-Logo.svg.png")
     },
     {
       skillName: "Assembly",
       fontAwesomeClassname: "fas fa-microchip",
       category: "Programming Languages",
-      description: "I experimented with Assembly during a Processors course at university. My current knowledge mainly originates from working on binary exploitation challenges."
+      description: "I experimented with Assembly during the Processors course at university. I keep using this knowledge when conducting binary anlaysis."
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js",
       category: "Programming Languages",
-      description: "My main experience with JavaScript comes from developing this website, which allowed me to deepen my understanding of web development.",
+      description: "My main experience with JavaScript comes from developing this website, which allowed me to deepen my understanding of web development. I still feel like a beginner but I can understand JS code.",
       image: require("./assets/images/javascript.png")
     },
     {
@@ -121,21 +122,21 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Git",
       fontAwesomeClassname: "fab fa-git-alt",
       category: "Tools",
-      description: "Since discovering Git at university, I have used it in all my projects. I consider myself proficient in version control and collaborative development workflows.",
+      description: "Since discovering Git at university, I have used it in all my projects. It has saved me many hours and costed me many other hours too. Nowadays, I consider myself proficient in version control and can manage collaborative development systems.",
       image: require("./assets/images/Git_icon.svg.png")
     },
     {
       skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker",
       category: "Tools",
-      description: "I have used Docker in several projects. Although I am not an expert, I am capable of configuring it and ensuring it functions efficiently.",
+      description: "I have used Docker in some projects. Yet, I still have a lot of things to learn and would like to get the chance to do so.",
       image: require("./assets/images/docker.png")
     },
     {
       skillName: "LaTeX",
       fontAwesomeClassname: "fas fa-file-alt",
       category: "Tools",
-      description: "I use LaTeX regularly for document creation, including reports and presentations, and I am very comfortable working with it.",
+      description: "I use LaTeX regularly for document creation, including reports and presentations. I am very comfortable working with it.",
       image: require("./assets/images/latex.png")
     },
     {
@@ -149,7 +150,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "CI/CD",
       fontAwesomeClassname: "fas fa-sync-alt",
       category: "Frameworks & Libraries",
-      description: "I implemented a Continuous Integration and Continuous Deployment pipeline from scratch using GitHub Actions, which provided me with practical experience in the process.",
+      description: "I implemented a Continuous Integration and Continuous Deployment pipeline from scratch using GitHub Actions. It conducted automatic tests and status reports on the project.",
       image: require("./assets/images/CiCd.png")
     },
     {
@@ -163,7 +164,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "React",
       fontAwesomeClassname: "fab fa-react",
       category: "Frameworks & Libraries",
-      description: "My main experience with React comes from building this website and developing the frontend for the Box Packing Optimization project.",
+      description: "My main experience with React comes from building this website and developing the frontend for the Box Packing Optimization project. I still have lots of things to learn about it.",
       image: require("./assets/images/React-icon.svg.png")
     },
     {
@@ -285,9 +286,9 @@ const bigProjects = {
       projectName: "Box Packing Optimization",
       projectDesc:
         "As part of my bachelor's degree, I collaborated with seven other developers to create a web-based application for warehouse " +
-        "object optimization. \n\n Given a specific number of boxes, the program calculates and displays the most efficient solution." +
+        "object optimization. We followed the SCRUM framework and deliveried a software product in span of five months. \n\nProject: Given a specific number of boxes, the program calculates and displays the most efficient solution." +
         "Key features include file import/export, box locking, and step-by-step reconstruction of the solution. \n\n" +
-        " The application was developed using Spring Boot (Java) and React." +
+        "The application was developed using Spring Boot (Java) and React." +
         " ",
       video: require("./assets/videos/box-packing-demo-v3.mp4"),
       footerLink: [
@@ -302,10 +303,11 @@ const bigProjects = {
       image: require("./assets/images/spear.png"),
       projectName: "Bachelor's Thesis: PhishGPT",
       projectDesc:
-        'In my thesis, "PhishGPT: Automating HTML Phishing Emails Using ChatGPT" I investigated the potential of Large Language Models (LLMs)' +
-        ", particularly ChatGPT, to automate the creation of high-quality phishing emails. \n\n" +
-        "The findings show that LLM-generated emails are as good as. This research highlights the feasibility of mass spear-phishing" +
-        " campaigns and underscores the need for more advanced defensive measurements.",
+        'In my thesis, "PhishGPT: Automating HTML Phishing Emails Using ChatGPT" I investigated the potential of Large Language Models' +
+        ", particularly ChatGPT, to automate the creation of high-quality spearphishing emails. \n\n" +
+        "The findings show that LLM-generated emails did not raise more suspicion than legitimate emails. This research highlights the feasibility of mass spearphishing" +
+        " campaigns and underscores the relevance of defensive measurements.",
+
       video: null,
       footerLink: [
         {
