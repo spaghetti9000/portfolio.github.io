@@ -3,6 +3,8 @@
 .education-card {
   display: flex;
   flex-direction: row;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 
@@ -65,7 +67,7 @@
   color: $textColor;
   font-weight: 700;
   font-size: 1.3rem;
-  margin: 0px;
+  margin: auto;
   width: max-content;
   line-height: normal;
 }

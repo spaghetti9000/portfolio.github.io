@@ -9,7 +9,7 @@ export default function EducationCard({ school }) {
   const GetDescBullets = ({ descBullets }) => {
     return descBullets
       ? descBullets.map((item, i) => (
-        <li key={i} className="subTitle">
+        <li key={i} className="education-subTitle">
           {item}
         </li>
       ))
@@ -55,11 +55,13 @@ export default function EducationCard({ school }) {
                 </p>
               </div>
               <p className="education-text-desc">{school.desc}</p>
-              <div className="education-text-bullets">
-                <ul>
-                  <GetDescBullets descBullets={school.descBullets} />
-                </ul>
-              </div>
+              {school.descBullets && school.descBullets.length > 0 && (
+                <div className="education-text-bullets">
+                  <ul>
+                    <GetDescBullets descBullets={school.descBullets} />
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
         </div>
