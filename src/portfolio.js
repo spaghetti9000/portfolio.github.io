@@ -187,7 +187,7 @@ const educationInfo = {
       schoolName: "Radboud University",
       logo: require("./assets/images/radboud-logo.png"),
       subHeader: "Master's Degree in Cybersecurity",
-      duration: "September 2025 - Present (Expected end date July 2027)",
+      duration: "September 2025 - Present",
       desc: "",
       descBullets: [""],
     },
