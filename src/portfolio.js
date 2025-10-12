@@ -344,7 +344,7 @@ const softSkills = {
     },
     {
       title: "Willingness to Learn",
-      description: "I think learning is cool and fun. There is always something interesting learn and understand. Knowledge is power"
+      description: "I think learning is cool and fun. There is always something interesting learn and understand. Knowledge is power."
     }
   ],
   languages: [
