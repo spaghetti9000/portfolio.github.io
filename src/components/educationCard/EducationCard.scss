@@ -61,15 +61,24 @@
   flex-direction: row;
   margin-top: 0.5rem;
   flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.education-text-details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .education-text-subHeader {
   color: $textColor;
   font-weight: 700;
   font-size: 1.3rem;
-  margin: auto;
+
+  margin-top: 0px;
   width: max-content;
-  line-height: normal;
 }
 
 .education-text-duration {
