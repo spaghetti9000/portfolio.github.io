@@ -6,7 +6,6 @@ import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 
 export default function SoftwareSkill() {
   const { isDark } = useContext(StyleContext);
-
   const [activeSkill, setActiveSkill] = useState(null);
   const [userClicked, setUserClicked] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -43,9 +42,9 @@ export default function SoftwareSkill() {
         const firstCategory = categories[0];
         const firstSkill = allSkills.find((s) => s.category === firstCategory);
         if (firstSkill) setActiveSkill(firstSkill.skillName);
-      }, 500); // wait 0.5 second
+      }, 500);
     } else if (!isVisible && !userClicked) {
-      setActiveSkill(null); // reset when not visible
+      setActiveSkill(null);
     }
 
     return () => clearTimeout(timeout);
@@ -65,6 +64,7 @@ export default function SoftwareSkill() {
 
     return () => clearInterval(interval);
   }, [userClicked, allSkills, isVisible]);
+
   const handleClick = (skillName) => {
     setUserClicked(true);
     setActiveSkill((prev) => (prev === skillName ? null : skillName));
@@ -76,45 +76,77 @@ export default function SoftwareSkill() {
         <div key={cat} className="skills-category-container">
           <h2
             className={
-              isDark ? "dark-mode skills-category-title" : "skills-category-title"
+              isDark
+                ? "dark-mode skills-category-title"
+                : "skills-category-title"
             }
           >
             {cat.charAt(0).toUpperCase() + cat.slice(1)}
           </h2>
 
-          <LayoutGroup>
-            <div className="software-skills-list">
+          {/* Use LayoutGroup at a higher scope so siblings share layout animation context */}
+          <LayoutGroup id={cat}>
+            <motion.div
+              className="software-skills-list"
+              layout
+              layoutScroll
+              transition={{ layout: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] } }}
+            >
               {skillsSection.softwareSkills
                 .filter((s) => s.category === cat)
-                .map((skill, idx) => {
+                .map((skill) => {
                   const isActive = activeSkill === skill.skillName;
 
                   return (
-                    <motion.div key={skill.skillName}
+                    <motion.div
+                      key={skill.skillName}
                       layout
-                      className={`software-skill-inline ${isActive ? "active" : ""}`
-                      }
+                      layoutId={skill.skillName} // 👈 links the same element’s layout across renders
                       onClick={() => handleClick(skill.skillName)}
-                      transition={{ layout: { duration: 0.4, ease: "easeInOut" } }}
+                      className={`software-skill-inline ${isActive ? "active" : ""}`}
+                      transition={{
+                        layout: { duration: 0.45, ease: [0.4, 0, 0.2, 1] },
+                        opacity: { duration: 0.3 },
+                      }}
                       style={{ cursor: "pointer" }}
                     >
-                      {skill.image ? (
-                        <img src={skill.image} alt={skill.skillName} className="w-16 h-16" />
-                      ) : (
-                        <i className={skill.fontAwesomeClassname + " fa-4x"}></i>
-                      )}
-                      <span className="skill-name">{skill.skillName}</span>
-
-                      <AnimatePresence>
+                      <motion.div layout="position" className="skill-icon">
+                        {skill.image ? (
+                          <img
+                            src={skill.image}
+                            alt={skill.skillName}
+                            className="w-16 h-16"
+                          />
+                        ) : (
+                          <i
+                            className={skill.fontAwesomeClassname + " fa-4x"}
+                          ></i>
+                        )}
+                      </motion.div>
+                      <motion.span
+                        layout="position" // only animate its position, not its box size
+                        className="skill-name"
+                        style={{
+                          transformOrigin: "center center",
+                          scale: 1, // explicitly lock scale
+                        }}
+                      >
+                        {skill.skillName}
+                      </motion.span>
+                      <AnimatePresence mode="popLayout">
                         {skill.description && isActive && (
                           <motion.div
                             key="description"
-                            className="software-skill-description"
                             layout
+                            layoutId={`${skill.skillName}-desc`}
+                            className="software-skill-description"
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: "auto" }}
                             exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.6, ease: "easeInOut" }}
+                            transition={{
+                              layout: { duration: 0.45, ease: "easeInOut" },
+                              opacity: { duration: 0.3 },
+                            }}
                             style={{ overflow: "hidden" }}
                           >
                             {skill.description}
@@ -124,11 +156,11 @@ export default function SoftwareSkill() {
                     </motion.div>
                   );
                 })}
-            </div>
+            </motion.div>
           </LayoutGroup>
-        </div >
-      ))
-      }
-    </div >
+        </div>
+      ))}
+    </div>
   );
 }
+
