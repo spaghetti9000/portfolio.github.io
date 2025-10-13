@@ -61,6 +61,7 @@
   flex-direction: row;
   margin-top: 0.5rem;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
   flex-grow: 1;
 }
@@ -68,17 +69,17 @@
 .education-text-details {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+
+  flex-direction: column;
+  justify-content: center;
 }
 
 .education-text-subHeader {
   color: $textColor;
   font-weight: 700;
   font-size: 1.3rem;
-
-  margin-top: 0px;
-  width: max-content;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .education-text-duration {
@@ -140,8 +141,13 @@
 
   .education-text-bullets>ul {
     list-style: none;
-    padding: 0;
+    padding: 1rem;
     margin: 0;
     margin-bottom: 1rem;
+  }
+
+  .education-text-subHeader {
+    margin: 0px;
+    width: 100%;
   }
 }

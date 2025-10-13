@@ -1,4 +1,3 @@
-/* Change this file to get your personal Portfolio */
 
 // To change portfolio colors globally go to the  _globalColor.scss file
 
@@ -179,7 +178,6 @@ https://fontawesome.com/icons?d=gallery */
 };
 
 // Education Section
-
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
@@ -272,7 +270,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -294,7 +292,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "",
+          url: "https://github.com/spaghetti9000/box-optimization",
         },
         //  you can add extra buttons here.
       ],
@@ -425,7 +423,7 @@ const blogSection = {
   title: "Blogs",
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
@@ -497,7 +495,7 @@ const twitterDetails = {
   display: false, // Set true to display this section, defaults to false
 };
 
-const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

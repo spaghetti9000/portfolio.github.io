@@ -15,11 +15,14 @@ RUN npm install
 # Audit fix npm packages 
 RUN npm audit fix 
 
+
 # Bundle app source 
 
 COPY . /app
 # Make port 3000 available to the world outside this container 
 EXPOSE 3000 
+
+
 # Run app.js when the container launches 
 
 CMD ["npm", "start"]
