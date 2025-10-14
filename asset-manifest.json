@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.d99cc6ef.css",
-    "main.js": "/static/js/main.184d5cd4.js",
+    "main.js": "/static/js/main.ab49b3eb.js",
     "static/css/487.f0248ee1.chunk.css": "/static/css/487.f0248ee1.chunk.css",
     "static/js/487.27f150c4.chunk.js": "/static/js/487.27f150c4.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/static/css/990.c6a7ee28.chunk.css",
     "static/js/990.a56151bc.chunk.js": "/static/js/990.a56151bc.chunk.js",
     "static/media/box-packing-demo-v3.mp4": "/static/media/box-packing-demo-v3.d820a32966cad03ff209.mp4",
+    "static/media/resume.pdf": "/static/media/resume.1b778382ec0737f969d6.pdf",
     "static/media/profile-pic-cropped2.JPG": "/static/media/profile-pic-cropped2.29afe2e949850df298f7.JPG",
-    "static/media/resume.pdf": "/static/media/resume.70aaf5d1e40b07ac5863.pdf",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Kali-dragon-icon.svg.png": "/static/media/Kali-dragon-icon.svg.4618b8d08fa1b6778b65.png",
     "static/media/radboud-logo.png": "/static/media/radboud-logo.41d9d821c258955a42d2.png",
@@ -36,7 +36,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.d99cc6ef.css.map": "/static/css/main.d99cc6ef.css.map",
-    "main.184d5cd4.js.map": "/static/js/main.184d5cd4.js.map",
+    "main.ab49b3eb.js.map": "/static/js/main.ab49b3eb.js.map",
     "487.f0248ee1.chunk.css.map": "/static/css/487.f0248ee1.chunk.css.map",
     "487.27f150c4.chunk.js.map": "/static/js/487.27f150c4.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/static/css/990.c6a7ee28.chunk.css.map",
@@ -44,6 +44,6 @@
   },
   "entrypoints": [
     "static/css/main.d99cc6ef.css",
-    "static/js/main.184d5cd4.js"
+    "static/js/main.ab49b3eb.js"
   ]
 }
