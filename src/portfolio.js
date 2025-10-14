@@ -34,7 +34,7 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/spaghetti9000",
+  github: "https://github.com/riberoc",
   linkedin: "https://www.linkedin.com/in/marcelo-ribero-cerro-7b56ba323",
 
   gmail: "marcelo.riberocerro@protonmail.com",
@@ -292,7 +292,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://github.com/spaghetti9000/box-optimization",
+          url: "https://github.com/riberoc/box-optimization",
         },
         //  you can add extra buttons here.
       ],
